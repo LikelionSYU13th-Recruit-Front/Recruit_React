@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #121212; /* 배경색을 검은색으로 설정 */
+}
+.ActivityPage-Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.activity-header {
+    margin-top: 161px;
+    height: 550px;
+    display: flex;
+    justify-content: center;   
+}
+
+.activity-header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-penImg {
+    width: 767px;
+    height: 439px;
+    margin-left: -80px; /* 왼쪽으로 이동하여 텍스트와 겹치게 */
+    z-index: 1; /* 제목보다 뒤에 배치 */
+}
+
+.activity-title {
+    margin: 0;
+    padding-top: 300px;
+    margin-right: -80px; /* 오른쪽으로 이동하여 이미지와 겹치게 */
+    z-index: 2; /* 이미지 위로 배치 */
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Pretendard-Bold';
+
+
+}
+
+.activity-subtitle{
+    color: #939393;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 24px;
+}
