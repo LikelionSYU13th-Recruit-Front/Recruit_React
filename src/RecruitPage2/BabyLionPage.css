@@ -35,9 +35,7 @@
     font-style: normal;
 }
 
-.babylion-page-active {
-    background-color: #F4F4F4 !important;
-}
+ㄴ
 
 body, html {
     margin: 0;
@@ -48,6 +46,7 @@ body, html {
     overflow-x: hidden; */
     display: flex;
     justify-content: center;
+    background-color: #F4F4F4
 }
 
 .babylionpage-container {

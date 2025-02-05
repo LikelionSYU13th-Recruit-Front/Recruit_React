@@ -2,15 +2,6 @@ import React, { useEffect } from 'react';
 import './BabyLionPage.css';
 
 function BabyLionPage() {
-
-        useEffect(() => {
-            document.body.classList.add('babylion-page-active');
-    
-            return () => {
-                document.body.classList.remove('babylion-page-active');
-            };
-        }, []);  
-
     return (
         <div className='babylionpage-container'>
             <div className='babylion-header'>
