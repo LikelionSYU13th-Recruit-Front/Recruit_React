@@ -28,6 +28,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.babylion-page-active {
+    background-color: #F4F4F4 !important;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -51,14 +62,87 @@ body, html {
 .babylion-header {
     margin-top: 239px;
     display: flex;
-    justify-content: flex-start;
-    padding-right: 130px;
+    justify-content: center;
 }
 
 .babylion-title {
     font-family: 'Pretendard-SemiBold';
     font-size: 50px;
     color: #323232;
+    margin: 0;
+    padding-right: 840px;
+}
+
+.babylion-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.babylion-body-first-row {
+    margin-top: 64px;
+}
+
+.babylion-body-second-row {
+    margin-top: 28px;
+}
+
+.babylion-body-second-row,
+.babylion-body-first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.babylion-first-row-box-1,
+.babylion-first-row-box-2,
+.babylion-first-row-box-3,
+.babylion-second-row-box-1,
+.babylion-second-row-box-2,
+.babylion-second-row-box-3 {
+    width: 384px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;  /* 세로 정렬 */
+    justify-content: center;  /* 수직 중앙 정렬 */
+    align-items: center;  /* 수평 중앙 정렬 */
+    text-align: center;  /* 텍스트 중앙 정렬 */
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+.babylion-box-num-1,
+.babylion-box-num {
+    font-family: 'intelone-mono-font-family-regular';
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+    color: #1B9CFF;
+}
+
+.babylion-box-num-1 {
+    padding-bottom: 20px;
+}
+
+.babylion-box-content-1,
+.babylion-box-content {
+    font-family: 'Pretendard-Medium';
+    font-size: 22px;
+    color: #323232;
+}
+
+.babylion-box-content-1 {
+    margin: 0;
+
+}
+
+.except {
+    color: #939393;
 }
 
 
