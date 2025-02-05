@@ -33,7 +33,8 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto; 
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     background-color: #121212; /* 배경색을 검은색으로 설정 */
@@ -48,7 +49,7 @@ body, html {
 }
 
 .activity-header {
-    margin-top: 161px;
+    /* margin-top: 161px; */
     height: 550px;
     display: flex;
     justify-content: center;   
@@ -77,12 +78,115 @@ body, html {
     color: #FFFFFF;
     font-size: 50px;
     font-family: 'Pretendard-Bold';
-
-
 }
 
 .activity-subtitle{
     color: #939393;
     font-family: 'Pretendard-SemiBold';
     font-size: 24px;
+}
+
+.activity-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start */
+}
+
+
+.activity-body-session {
+    width: 100%;
+    padding-top: 110px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+
+}
+
+.python-img,
+.idea-img,
+.hack-img,
+.session-img {
+    width: 560px;
+    height: 340px;
+}
+
+.activity-body-desc-3,
+.activity-body-desc-2,
+.activity-body-desc-1 {
+    /* padding-top: 50px; */
+}
+
+.desc-num {
+    color: #939393;
+    font-family: 'Pretendard-Medium';
+    font-size: 30px;
+}
+
+.desc-name {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.pink-color {
+    color: #FF469F;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.desc-main {
+    color: #939393;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+}
+
+.activity-body-idea {
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+
+.blue-color {
+    color: #1B9CFF;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.activity-body-hack{
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+
+.green-color {
+    color: #BDFF8B;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.activity-body-python {
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+
+.yellow-color {
+    color: #FFBE63;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
 }
