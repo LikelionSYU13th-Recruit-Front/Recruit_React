@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+.RecruitAbout-Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 145px;
+    width: 100%;
+    height: 723px;
+}
+
+.RecruitAbout-LikelionLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 366px;
+    height: 366px;
+}
+
+.RecruitAbout-LikelionLogo img {
+    width: 366px;
+    height: 366px;
+}
+
+.RecruitAbout-Intro {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.RecruitAbout-Intro-Title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.RecruitAbout-Intro-top {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.RecruitAbout-Intro-top img {
+    width: 26px;
+    height: 88px;
+    z-index: 2;
+}
+
+.RecruitAbout-Intro-Title-1 {
+    width: 446px;
+    height: 55px;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: #16396B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+    z-index: 1;
+}
+
+.RecruitAbout-Intro-bottom {
+    position: relative;
+    left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 343px;
+}
+
+.RecruitAbout-Intro-bottom img {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    width: 26px;
+    height: 88px;
+}
+
+.RecruitAbout-Intro-Title-2 {
+    width: 343px;
+    height: 55px;
+    font-family: 'Pretendard-Bold';
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #16396B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.RecruitAbout-Intro-Description {
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+    color: #FFFFFF  ;
+    line-height: 21.48px;
+}

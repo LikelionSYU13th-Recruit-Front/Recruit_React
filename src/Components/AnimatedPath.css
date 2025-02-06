@@ -1,11 +1,8 @@
 .animated-path-container {
     position: absolute;
-    top: -10px;
-    left: -85px;
+    top: 0;
+    left: -360px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
     z-index: 1;
   }

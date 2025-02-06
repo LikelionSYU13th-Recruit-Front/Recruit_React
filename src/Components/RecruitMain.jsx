@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import './RecruitMain.css';
+import PenAnimation from "./PenAnimation";
 import AnimatedPath from './AnimatedPath';
 import Header from './Header';
 
@@ -45,9 +46,9 @@ function RecruitMain() {
   }, []);
   return (
     <div className="RecuritMain-Main">
-      <Header />
+      {/* <Header /> */}
       <AnimatedPath />
-
+      {/* <PenAnimation /> */}
       <div className="RecuritMain-Main-Title">
         {typedText.length > 0 &&
           typedText.map((item, index) =>
