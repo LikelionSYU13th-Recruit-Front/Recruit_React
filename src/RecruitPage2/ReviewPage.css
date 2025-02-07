@@ -81,7 +81,31 @@ html {
 .header-arrow {
     width: 32.38;
     height: 38.73px;
-    margin-left: 25px;
+    margin-right: 60px;
+    margin-top: 100px;
+    position: absolute;
+
+}
+
+.from-12th {
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1B9CFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 160px;
+}
+
+.from-text {
+    color: #FFFFFF;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
 }
 
 .review-body {

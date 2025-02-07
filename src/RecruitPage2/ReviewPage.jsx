@@ -12,8 +12,11 @@ function ReviewPage() {
                 <h1 className='review-header-content'>
                     삼육멋사 12기<br />
                     아기사자들의 <span className='review-header-blue'>생생한 후기</span>
-                    <img src={HeaderArrow} className='header-arrow' />
                 </h1>
+                <img src={HeaderArrow} className='header-arrow' />
+                <div className='from-12th'>
+                     <p className='from-text'>FROM. 12th</p>
+                </div>
             </div>
             <div className='review-body'>
                 <h3 className='review-track-design'>기획 & UX/UI 디자인</h3>
