@@ -6,6 +6,8 @@ import "./QNA.css"
 
 export default function QNApage(){
 
+    /*깃허브 테스트 커밋밋 */
+
     const [activeQNA,setActiveQNA] = useState(null);
     /*클릭한 qna 추적 */
     const toggleClickQNA = (index) =>[
