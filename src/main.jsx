@@ -18,7 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<div id='subroot'><Header /><RecruitMain /><RecruitAbout /><RecruitTrackIntro /><ActivityPage /></div>} />
-
       </Routes>
     </Router>
   </React.StrictMode>
@@ -28,7 +27,6 @@ ReactDOM.createRoot(document.getElementById('root2')).render(
     <Router>
       <Routes>
         <Route path="/" element={<div id='subroot'><BabyLionPage /><ReviewPage /></div>} />
-
       </Routes>
     </Router>
   </React.StrictMode>
