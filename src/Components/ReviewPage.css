@@ -49,6 +49,7 @@ html {
 }
 
 .reviewpage-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -58,6 +59,7 @@ html {
 }
 
 .review-header {
+    position: relative;
     width: 100%;
     margin-top: 136px;
     display: flex;
@@ -67,6 +69,7 @@ html {
 }
 
 .review-header-content {
+    position: relative;
     margin: 0;
     font-family: 'Pretendard-Bold';
     font-size: 50px;
@@ -88,6 +91,7 @@ html {
 }
 
 .from-12th {
+    position: relative;
     width: 120px;
     height: 30px;
     border: none;
@@ -109,6 +113,7 @@ html {
 }
 
 .review-body {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,6 +126,7 @@ html {
 .review-frontend-boxes,
 .review-backend-boxes,
 .review-design-boxes {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +136,7 @@ html {
 
 .review-box-2,
 .review-box-1 {
+    position: relative;
     width: 550px;
     height: 290px;
     border: none;
@@ -144,6 +151,7 @@ html {
 }
 
 .review-box-header {
+    position: relative;
     width: calc(100% - 109px);
     /*좌우 패딩값을 빼줘야함*/
     display: flex;
@@ -168,21 +176,25 @@ html {
 
 .review-track-backend,
 .review-track-frontend {
+    position: relative;
     margin: 0;
     margin-top: 70px;
 }
 
 .review-track-design {
+    position: relative;
     margin: 0;
     margin-top: 100px;
     padding-right: 880px;
 }
 
 .review-track-frontend {
+    position: relative;
     padding-right: 990px;
 }
 
 .review-track-backend {
+    position: relative;
     padding-right: 1037px;
 }
 
@@ -211,6 +223,7 @@ html {
 .header-name-4,
 .header-name-5,
 .header-name-6 {
+    position: relative;
     margin-left: auto;
     padding-top: 14px;
     color: #939393;
@@ -221,6 +234,7 @@ html {
 .header-title-design,
 .header-title-frontend,
 .header-title-backend {
+    position: relative;
     padding-top: 1px;
     font-family: 'Pretendard-SemiBold';
     font-size: 24px;
@@ -240,6 +254,7 @@ html {
 
 
 .review-content-box {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -250,6 +265,7 @@ html {
 
 
 .review-content {
+    position: relative;
     margin: 0;
     font-family: 'Pretendard-Medium';
     font-size: 18px;
