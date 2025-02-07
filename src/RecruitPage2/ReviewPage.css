@@ -111,18 +111,22 @@ body, html {
     border-radius: 24px;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* 기존 유지 */
+    align-items: center; /* 가로 방향 중앙 정렬 */
+    flex-direction: row; /* 기존 레이아웃 유지 */
+    position: relative;
 
 }
 
 .review-box-header {
-    width: 100%;
+    width: calc(100% - 109px); /*좌우 패딩값을 빼줘야함*/
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    align-items: center; /* 헤더 내부 정렬 */
     padding-top: 51px;
     padding-left: 49px;
     padding-right: 60px;
+    position: absolute;
+    top: 0; /* 상단 끝까지 올림 */
 
 }
 
@@ -205,5 +209,30 @@ body, html {
 
 .header-title-backend {
     color: #FFBE63;
+}
+
+.review-content-box-1 ,
+.review-content-box-2 ,
+.review-content-box-3 ,
+.review-content-box-4 ,
+.review-content-box-5 , 
+.review-content-box-6{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 38px;
+
+
+}
+
+
+.review-content {
+    margin: 0;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+    color: #323232;
+
 }
 
