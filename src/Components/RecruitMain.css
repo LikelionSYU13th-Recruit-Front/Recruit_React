@@ -29,17 +29,28 @@
 }
 
 #root {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #121212;
+}
+
+#root2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F4F4F4;
 }
 
 #subroot {
   width: 1200px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,11 +62,14 @@ html {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #121212;
+  background-color: transparent;
+}
+
+body {
+  flex-direction: column;
 }
 
 .RecuritMain-Main {
