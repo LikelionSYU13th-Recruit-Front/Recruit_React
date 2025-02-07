@@ -24,7 +24,7 @@ function ReviewPage() {
                             <p className='header-title-design'>든든한 인생 서포터</p>
                             <p className='header-name-1'>현O진</p>
                         </div>
-                        <div className='review-content-box-1'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 대학교 입학 후, 꿈을 향해 오직 스스로의 힘만으로 나아가야 <br />
                                 한다는 생각에 막막했었는데, 멋쟁이사자처럼에 들어와 <br />
@@ -42,7 +42,7 @@ function ReviewPage() {
                             <p className='header-title-design'>기획, 디자인에 관심있는 누구나</p>
                             <p className='header-name-2'>김O나</p>
                         </div>
-                        <div className='review-content-box-2'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 피그마를 한 번도 사용해 본 적이 없어서 잘 해낼 수 있을까  <br />
                                 걱정을 많이 했었지만, 처음부터 차근차근 잘 알려주셔서 <br />
@@ -63,13 +63,13 @@ function ReviewPage() {
                             <p className='header-title-frontend'>멋사 더 빨리 들어갈 걸</p>
                             <p className='header-name-3'>심O영</p>
                         </div>
-                        <div className='review-content-box-3'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 언어만 조금 다룰 줄 아는 상태로 들어가서 <br />
                                 걱정했지만 열심히 했더니 13기 모집 페이지까지  <br />
                                 만들 수 있는 실력을 갖추게 되었습니다.<br />
                                 또한 멋사를 통해 여러 대회에 참여할 기회가 있었고<br />
-                                열심히 참여했더니 많은 것을 얻어갈 수 있었습니다! 
+                                열심히 참여했더니 많은 것을 얻어갈 수 있었습니다!
                             </p>
                         </div>
 
@@ -81,7 +81,7 @@ function ReviewPage() {
                             <p className='header-title-frontend'>멋사는 하는게 이득!</p>
                             <p className='header-name-4'>장O익</p>
                         </div>
-                        <div className='review-content-box-4'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 학교에서 배우지 않은 것들을 배울 수 있어 좋았고,  <br />
                                 여러 대회를 경험하며 많은 것을 얻어갈 수 있었습니다<br />
@@ -102,7 +102,7 @@ function ReviewPage() {
                             <p className='header-title-backend'>모두가 알았으면 하는 멋사</p>
                             <p className='header-name-5'>권O진</p>
                         </div>
-                        <div className='review-content-box-5'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 멋쟁이사자처럼 12기와 함께한 2024년은 저에게 있어 값 <br />
                                 진 성장의 시간이었습니다. 다가오는 2025년에는 13기  <br />
@@ -120,7 +120,7 @@ function ReviewPage() {
                             <p className='header-title-backend'>개발 자신감을 지탱하는 디딤돌</p>
                             <p className='header-name-6'>김O현</p>
                         </div>
-                        <div className='review-content-box-6'>
+                        <div className='review-content-box'>
                             <p className='review-content'>
                                 멋쟁이사자처럼에서의 경험은 단순한 기술 습득 이상의 <br />
                                 의미가 있었어요. 웹 개발의 핵심인 MVC 패턴을 통해  <br />
