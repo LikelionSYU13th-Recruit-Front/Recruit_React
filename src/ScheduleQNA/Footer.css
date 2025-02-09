@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
 .footer-container{
     width: 1920px;
     height: 240px;
