@@ -82,7 +82,7 @@ function schedulePage() {
 
                 <div className="calendar-grid">
                     {weeks.map((week, weekIndex) => (
-                    <div key={weekIndex} className="week-row">
+                    <div key={weekIndex} className={`week-row week-${weekIndex + 1}`}>
                         {week.map((day, dayIndex) => {
                         const isSelected = selectedDates.includes(day);
                         const isLeft = leftDates.includes(day);
