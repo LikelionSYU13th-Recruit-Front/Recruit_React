@@ -12,7 +12,9 @@ function Header() {
         <Link to="RecruitAbout" smooth={true} duration={500} className="Header-Main-Right-ABOUT">
           ABOUT
         </Link>
-        <div className="Header-Main-Right-FAQ">FAQ</div>
+        <Link to="FAQ" smooth={true} duration={1800} className="Header-Main-Right-FAQ">
+          FAQ
+        </Link>
         <div className="Header-Main-Right-APPLY">13기 지원하기</div>
       </div>
     </div>
