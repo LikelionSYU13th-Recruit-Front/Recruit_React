@@ -1,75 +1,10 @@
-// import "./Schedule.css";
-
-// export default function SchedulePage() {
-//     const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
-//     const weeks = [
-//         [23, 24, 25, 26, 27, 28, "3/1"],
-//         [2, 3, 4, 5, 6, 7, 8],
-//         [9, 10, 11, 12, 13, 14, 15],
-//         [16, 17, 18, 19, 20, 21, 22],
-//     ];
-
-//     return (
-//         <div className="schedule-container">
-//             <div className="schedule-title">
-//                 멋쟁이사자처럼 삼육대학교 <br />
-//                 13기 모집일정
-//             </div>
-//             <div className="calendar-container">
-//                 <div className="days-of-week">
-//                     {daysOfWeek.map((day, index) => (
-//                         <span key={index} className="day">{day}</span>
-//                     ))}
-//                 </div>
-//                 <div className="weeks-container">
-//                     {weeks.map((week, rowIndex) => (
-//                         <div key={rowIndex} className="week-row">
-//                             {week.map((day, colIndex) => {
-//                                 const isHighlightedBlue =
-//                                     (rowIndex === 0 && colIndex >= 4) || // 27~3/1
-//                                     (rowIndex === 1) || // 2~8
-//                                     (rowIndex === 2 && colIndex <= 3); // 9~12
-                                
-//                                 const isHighlightedGray =
-//                                     (rowIndex === 2 && (colIndex === 5 || colIndex === 6)); // 14~15
-
-//                                 const isLeftRounded =
-//                                     (rowIndex === 0 && colIndex === 4) || 
-//                                     (rowIndex === 1 && colIndex === 0) || 
-//                                     (rowIndex === 2 && colIndex === 0) || 
-//                                     (rowIndex === 2 && colIndex === 5); // 14일 
-
-//                                 const isRightRounded =
-//                                     (rowIndex === 0 && colIndex === 6) || 
-//                                     (rowIndex === 1 && colIndex === 6) || 
-//                                     (rowIndex === 2 && colIndex === 3) || 
-//                                     (rowIndex === 2 && colIndex === 6); // 15일 
-//                                 return (
-//                                     <span
-//                                         key={colIndex}
-//                                         data-day={day === 12 ? "12" : ""}
-//                                         className={`day-cell
-//                                             ${isHighlightedBlue ? "highlighted-blue" : ""}
-//                                             ${isHighlightedGray ? "highlighted-gray" : ""}
-//                                             ${isLeftRounded ? "rounded-left" : ""}
-//                                             ${isRightRounded ? "rounded-right" : ""}
-//                                         `}
-//                                     >
-//                                         {day}
-//                                     </span>
-//                                 );
-//                             })}
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-
-
 import "./Schedule.css";
+import dot2 from "../images/2dot.png"
+import dot16 from "../images/16dot.png"
+import dot12 from "../images/12dot.png"
+import dot15 from "../images/15dot.png"
+
+
 
 function schedulePage() {
     const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
@@ -91,6 +26,51 @@ function schedulePage() {
 
     return (
         <div className="schedule-container">
+            <div className="schedule-title">
+                멋쟁이사자처럼 삼육대학교 <br />
+                13기 모집일정
+            </div>
+
+            <div className="dot2-container">
+                <div className="dot2-text">
+                    02/27(목) - 03/9 (일) <br />
+                    <span>서류 모집</span>
+                </div>
+                <div className="dot2-img">
+                    <img src={dot2} alt="" />
+                </div>
+            </div>    
+
+            <div className="dot16-container">
+                <div className="dot16-text">
+                    3/16(일) <br />
+                    <span>면접 결과 발표</span>
+                </div>
+                <div className="dot16-img">
+                    <img src={dot16} alt="" />
+                </div>
+            </div>
+
+            <div className="dot15-container">
+                <div className="dot15-img">
+                    <img src={dot15} alt="" />
+                </div>
+                <div className="dot15-text">
+                    3/14(금)-3/16(일) <br />
+                    <span>면접</span>
+                </div>
+            </div>
+
+            <div className="dot12-container">
+                <div className="dot12-img">
+                    <img src={dot12} alt="" />
+                </div>
+                <div className="dot12-text">
+                    3/12(수)<br />
+                    <span>서류 결과 발표</span>
+                </div>
+            </div>
+
             <div className="calendar-container">
                 <div className="weekdays">
                     {daysOfWeek.map((day, index) => (
@@ -111,6 +91,7 @@ function schedulePage() {
                         const isDown = downDates.includes(day);
                         const isHighlighted = highlightedDates.includes(day);
                         const isLeftFilled = leftFilledDates.includes(day);
+
                         return (
                             <div
                             key={dayIndex}
