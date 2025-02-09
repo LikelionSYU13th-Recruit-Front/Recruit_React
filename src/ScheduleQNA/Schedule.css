@@ -108,19 +108,16 @@
     font-size: 26px;
     background-color: transparent;
     color: #000000;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
     position: relative;
-    padding: 22px;
-
+    padding: 24px;
   }
   
   .selected {
     background-color:#1B9CFF;
     color: #FFFFFF;
     position: relative;
-    padding: 22px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
+    padding: 24px 13px 24px 13px;
   }
   
   .selected::before,
@@ -130,7 +127,6 @@
     width: 20px;
     height: 20px;
     background-color:#1B9CFF;
-    
     z-index: -1;
   }
   
@@ -150,7 +146,7 @@
     background-color:#1B9CFF;
     color: #FFFFFF;
     border-top-left-radius: 40px;
-    padding: 22px;
+    padding: 24px;
     padding-left: 11px;
     border-bottom-left-radius: 40px;
     position: relative;
@@ -159,7 +155,7 @@
   .rightDates {
     background-color:#1B9CFF;
     color: #FFFFFF;
-    padding: 22px;
+    padding: 24px;
     padding-right: 11px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -172,7 +168,7 @@
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     position: relative;
-    padding: 22px;
+    padding: 24px;
     padding-left: 11px;
   }
   
@@ -182,7 +178,7 @@
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     position: relative;
-    padding: 22px;
+    padding: 24px;
     padding-right: 11px;
   }
   
@@ -191,24 +187,24 @@
     color: #FFFFFF;
     font-weight: bold;
     border-radius: 50%;
-    width: 50px;
+    width: 100px;
     margin-right: 5px;
-    /* height: 64px; */
+    height: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 10px solid #D8D8D8;
     /* margin-left: 17px;
     margin-right: 23px; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
 
   .left-filled {
     background-color:#1B9CFF;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding: 22px;
-    padding-right: 11px;
+    padding: 24px;
+    padding-right: 5px;
 
   }
   
@@ -236,8 +232,6 @@
   width: 40px;
   height: 230px;
 }
-
-
 
 
 .dot2-container{
