@@ -9,15 +9,6 @@ import pythonImg from '../images/python.png'
 
 
 function ActivityPage() {
-    useEffect(() => {
-        document.body.classList.add('activity-page-active');
-
-        return () => {
-            document.body.classList.remove('activity-page-active');
-        };
-    }, []);    
-
-
     return (
         <div className='ActivityPage-Container'>
             <div className='activity-header'>

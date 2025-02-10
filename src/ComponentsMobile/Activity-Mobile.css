@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.activity-mobile-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-mobile-header {
+    position: relative;
+    display: flex;
+    /* width: 100%; */
+
+    padding-right: 35%;
+}
+
+.activity-mobile-title {
+    color: #FFFFFF;
+    font-family: 'Pretendard-Bold';
+    font-size: 24px;
+}
+
+.mobile-green-color {
+    color: #BDFF8B;
+}
+
+.activity-mobile-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-session-desc{
+    padding-right: 30px;
+}
+
+.mobile-python-desc {
+    padding-right: 20px;
+}
+
+.mobile-hack-desc {
+    padding-right: 62px;
+}
+
+.mobile-ideaton-desc {
+    padding-right: 15px;
+}
+
+.sessionImg-mobile {
+    width: 342px;
+    height: 182px;
+    margin-top: 15px;
+}
+
+.pythonImg-mobile,
+.hackImg-mobile,
+.ideatonImg-mobile {
+    width: 342px;
+    height: 182px;
+    margin-top: 46px;
+}
+
+
+
+.mobile-desc-content,
+.mobile-desc-title,
+.mobile-desc-num {
+    margin: 0;
+}
+
+.mobile-desc-num {
+    font-family: 'intelone-mono-font-family-regular';
+    font-weight: 500;
+    font-size: 20px;
+    color: #939393;
+    margin-top: 8px;
+}
+
+.mobile-desc-title {
+    font-family: 'Pretendard-Bold';
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.mobile-pink-color {
+    color: #FF469F;
+}
+
+.mobile-desc-content {
+    font-family: 'Pretendard-Medium';
+    font-size: 14px;
+    color: #939393;
+    margin-top: 12px;
+}
+
+.mobile-blue-color{
+    color: #1B9CFF;
+}
+
+.mobile-orange-color {
+    color: #FFBE63;
+}
+
+
+
