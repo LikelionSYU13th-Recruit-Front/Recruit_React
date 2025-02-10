@@ -1,15 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LIKELION13TH</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <div id="root2"></div>
-    <div id="root3"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIKELION13TH</title>
+  <style>
+    /* ✅ 기본적으로 모든 요소를 숨김 */
+    #root,
+    #root2,
+    #root3,
+    #root-mobile,
+    #root2-mobile,
+    #root3-mobile {
+      display: none !important;
+    }
+
+    /* ✅ PC (1920px 이상)에서는 root 요소 표시 */
+    @media (min-width: 1920px) {
+      #root {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #121212;
+      }
+
+      #root2 {
+        position: relative;
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #F4F4F4;
+      }
+
+      #root3 {
+        position: relative;
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #121212;
+      }
+    }
+
+    /* ✅ 모바일 (1920px 이하)에서는 모바일 전용 root 표시 */
+    @media (max-width: 1919px) {
+      #root-mobile {
+        position: relative;
+        width: 100vw;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #121212;
+      }
+
+      #root2-mobile {
+        position: relative;
+        width: 100vw;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #F4F4F4;
+      }
+
+      #root3-mobile {
+        position: relative;
+        width: 100vw;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #121212;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ PC 전용 -->
+  <div id="root"></div>
+  <div id="root2"></div>
+  <div id="root3"></div>
+  <!-- ✅ 모바일 전용 -->
+  <div id="root-mobile"></div>
+  <div id="root2-mobile"></div>
+  <div id="root3-mobile"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
