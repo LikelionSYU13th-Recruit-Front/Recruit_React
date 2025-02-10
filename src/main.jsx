@@ -24,7 +24,8 @@ import Footer from './Components/footer.jsx';
 //모바일
 import HeaderMobile from './ComponentsMobile/Header-Mobile.jsx';
 import RecruitMainMobile from './ComponentsMobile/RecruitMain-Mobile.jsx';
-
+import RecruitAboutMobile from './ComponentsMobile/RecruitAbout-Mobile.jsx';
+import RecruitTrackIntroMobile from './ComponentsMobile/RecruitTrackIntro-Mobile.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -59,7 +60,7 @@ ReactDOM.createRoot(document.getElementById('root-mobile')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /></div>} />
+        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>
