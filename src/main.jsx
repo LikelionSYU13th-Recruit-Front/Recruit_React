@@ -29,6 +29,7 @@ import RecruitTrackIntroMobile from './ComponentsMobile/RecruitTrackIntro-Mobile
 
 // 모바일 광
 import ActivityMobile from './ComponentsMobile/Activity-Mobile.jsx';
+import BabyLionMobile from './ComponentsMobile/BabyLion-Mobile.jsx';
 
 
 
@@ -74,7 +75,7 @@ ReactDOM.createRoot(document.getElementById('root2-mobile')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot-mobile'></div>} />
+        <Route path="/" element={<div id='subroot-mobile'><BabyLionMobile /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>

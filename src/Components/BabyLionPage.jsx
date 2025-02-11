@@ -13,7 +13,7 @@ function BabyLionPage() {
                     <div className='babylion-first-row-box-1'>
                         <p className='babylion-box-num-1'>01</p>
                         <p className='babylion-box-content-1'>
-        `                   매주 n요일 n시에 진행되는 <br />
+        `                   매주 목요일 5시에 진행되는 <br />
                             정규 세션에 참여할 수 있는 사람<br />
                             <span className='except'>(시험기간 제외)</span>
                         </p>
