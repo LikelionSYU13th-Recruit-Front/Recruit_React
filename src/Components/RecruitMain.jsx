@@ -46,9 +46,7 @@ function RecruitMain() {
   }, []);
   return (
     <div className="RecuritMain-Main">
-      {/* <Header /> */}
       <AnimatedPath />
-      {/* <PenAnimation /> */}
       <div className="RecuritMain-Main-Title">
         {typedText.length > 0 &&
           typedText.map((item, index) =>

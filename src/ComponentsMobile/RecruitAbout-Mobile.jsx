@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 
 function RecruitAbout() {
     return (
-        <Element name="RecruitAbout" className="RecruitAbout-Container-Mobile">
+        <Element name="RecruitAboutMobile" className="RecruitAbout-Container-Mobile">
             <div className="RecruitAbout-Intro-Title-Mobile">
                 <div className="RecruitAbout-Intro-Title-InBox-Mobile">
                     <div className="RecruitAbout-Intro-top-Mobile">

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import './RecruitMain-Mobile.css';
 
+import PenAnimationMobile from './PenAnimationMobile';
+
 function RecruitMainMobile() {
 
   const textArray = [
@@ -43,6 +45,7 @@ function RecruitMainMobile() {
   }, []);
   return (
     <div className="RecuritMain-Main-Mobile">
+      <PenAnimationMobile />
       <div className="RecuritMain-Main-Title-Mobile">
         {typedText.length > 0 &&
           typedText.map((item, index) =>

@@ -9,7 +9,7 @@ function HeaderMobile() {
         <img src={logo13th} alt="logo13th" />
       </div>
       <div className="Header-Main-Right-Mobile">
-        <Link to="RecruitAbout" smooth={true} duration={500} className="Header-Main-Right-ABOUT-Mobile">
+        <Link to="RecruitAboutMobile" smooth={true} duration={500} className="Header-Main-Right-ABOUT-Mobile">
           ABOUT
         </Link>
         <Link to="FAQ" smooth={true} duration={1800} className="Header-Main-Right-FAQ-Mobile">

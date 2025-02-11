@@ -1,0 +1,10 @@
+.PenAnimationMobile-container {
+  position: absolute;
+  top: 100px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 552px;
+}
