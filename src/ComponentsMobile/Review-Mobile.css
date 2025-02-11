@@ -35,116 +35,69 @@
     font-style: normal;
 }
 
-.activity-mobile-container {
-    width: 100%;
+.Review-Mobile-Container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    gap: 70px;
 }
 
-.activity-mobile-header {
+.review-mobile-header {
     position: relative;
-    display: flex;
     width: 342px;
+    /* margin-top: 136px; */
 
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.activity-mobile-title {
-    color: #FFFFFF;
+.review-mobile-title {
+    margin: 0;
     font-family: 'Pretendard-Bold';
     font-size: 24px;
 }
 
-.mobile-green-color {
-    color: #BDFF8B;
+.header-arrow-mobile {
+    width: 13.34;
+    height: 16px;
+    margin-left: 225px;
+    margin-top: 95px;
+    position: absolute;
+
 }
 
-.activity-mobile-body {
+.from-12th-mobile {
     position: relative;
+    width: 80px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1B9CFF;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    position: absolute;
+    margin-left: 245px;
+    margin-top: 135px;
 }
 
-
-.mobile-session-desc{
-    padding-right: 30px;
-}
-
-.mobile-python-desc {
-    padding-right: 20px;
-    padding-bottom: 129px;
-}
-
-.mobile-hack-desc {
-    padding-right: 62px;
-}
-
-.mobile-ideaton-desc {
-    padding-right: 15px;
-}
-
-.sessionImg-mobile {
-    position: relative;
-    width: 342px;
-    height: 182px;
-    margin-top: 15px;
-}
-
-.pythonImg-mobile,
-.hackImg-mobile,
-.ideatonImg-mobile {
-    position: relative;
-    width: 342px;
-    height: 182px;
-    margin-top: 46px;
-}
-
-
-
-.mobile-desc-content,
-.mobile-desc-title,
-.mobile-desc-num {
-    margin: 0;
-}
-
-.mobile-desc-num {
-    font-family: 'intelone-mono-font-family-regular';
-    font-weight: 500;
-    font-size: 20px;
-    color: #939393;
-    margin-top: 8px;
-}
-
-.mobile-desc-title {
-    font-family: 'Pretendard-Bold';
-    font-size: 16px;
+.from-text-mobile {
     color: #FFFFFF;
-    margin-top: 6px;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 10px;
 }
 
-.mobile-pink-color {
-    color: #FF469F;
+.review-mobile-body {
+    width: 100%;
+    margin-bottom: 62px;
 }
 
-.mobile-desc-content {
-    font-family: 'Pretendard-Medium';
-    font-size: 14px;
-    color: #939393;
-    margin-top: 12px;
-}
 
-.mobile-blue-color{
-    color: #1B9CFF;
-}
-
-.mobile-orange-color {
-    color: #FFBE63;
-}
 
 
 
