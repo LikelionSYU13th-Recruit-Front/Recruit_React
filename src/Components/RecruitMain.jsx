@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './RecruitMain.css';
 import PenAnimation from "./PenAnimation";
 import AnimatedPath from './AnimatedPath';
-import Header from './Header';
 
 function RecruitMain() {
 

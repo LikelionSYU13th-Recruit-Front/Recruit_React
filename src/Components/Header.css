@@ -21,7 +21,7 @@
     align-items: center;
     gap: 635px;
     z-index: 1000;
-    background-color: transparent;
+    background-color: #121212;
 }
 
 .Header-Main-Left,

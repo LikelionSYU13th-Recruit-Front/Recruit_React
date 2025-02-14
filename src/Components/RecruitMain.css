@@ -28,6 +28,11 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
+
 #subroot {
   width: 100%;
   display: flex;

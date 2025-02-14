@@ -1,8 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import './postExample.css';
 
+import arrowRight from '../images/arrowRight.png';
+
 function postExample() {
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
   const [selectedTrack, setSelectedTrack] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -50,7 +55,7 @@ function postExample() {
     e.preventDefault();
     let validationErrors = {};
     let isValid = true;
-    
+
     Object.keys(formData).forEach((key) => {
       if (key !== 'q5' && formData[key] === "") {
         validationErrors[key] = true;
@@ -72,14 +77,18 @@ function postExample() {
 
     setErrors(validationErrors);
     if (!isValid) {
+      alert("양식을 모두 입력해주세요.");
       return;
     }
+    setIsLoading(true);
     try {
       console.log(formData);
       await axios.post("https://syu-likelion.org/applications", formData);
-      alert("성공이요");
+
+      navigate('/Complete');
     } catch (error) {
-      alert("에러요");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -115,11 +124,11 @@ function postExample() {
     <div className="PostContainer">
       <div className="PostContainer-Title">멋쟁이사자처럼 삼육대학교<br />13기 지원하기</div>
       <div className="PostContainer-Notice-Box">
-      <div className="PostContainer-Notice">
-        <div className="PostContainer-Notice-Top">지원 전 읽어주세요!</div>
-        <div className="PostContainer-Notice-Bottom">13기 삼육멋사 지원서는 제출 후 조회 및 수정이 불가능합니다.<br />
-          재작성하여 다시 제출하더라도 최초 제출된 지원서로 평가되니,<br />
-          제출 전 지원 내용을 신중히 검토하시기 바랍니다.</div>
+        <div className="PostContainer-Notice">
+          <div className="PostContainer-Notice-Top">지원 전 읽어주세요!</div>
+          <div className="PostContainer-Notice-Bottom">13기 삼육멋사 지원서는 제출 후 조회 및 수정이 불가능합니다.<br />
+            재작성하여 다시 제출하더라도 최초 제출된 지원서로 평가되니,<br />
+            제출 전 지원 내용을 신중히 검토하시기 바랍니다.</div>
         </div>
       </div>
       <form className="PostContainer-Contents" onSubmit={handleSubmit}>
@@ -142,8 +151,10 @@ function postExample() {
           <div className="PostContainer-Contents-email">
             <div className="PostContainer-Contents-email-Label">메일</div>
             <div className="PostContainer-Contents-email-Box">
-              <input className={`PostContainer-Contents-email-Inputbox ${errors.email ? 'error-input' : ''}`} type="email" name="email" placeholder="likelion36@likelion.org" value={formData.email} onChange={handleChange} />
-              {errors.email && <span className="error-text">*필수 입력 항목입니다.</span>}
+              <div className="PostContainer-Contents-email-miniBox">
+                <input className={`PostContainer-Contents-email-Inputbox ${errors.email ? 'error-input' : ''}`} type="email" name="email" placeholder="likelion36@likelion.org" value={formData.email} onChange={handleChange} />
+                {errors.email && <span className="error-text">*필수 입력 항목입니다.</span>}
+              </div>
               <div className="PostContainer-Contents-email-Notice">
                 작성해주신 이메일 주소로 결과 안내 이메일을 발송해 드립니다.<br />
                 제출 전, 올바른 이메일 주소를 입력하셨는지 확인하여 주시기 바랍니다.
@@ -226,19 +237,24 @@ function postExample() {
             {questions[selectedTrack].map((question, index) => (
               <div className="PostContainer-TrackQ-Box" key={index}>
                 <div className="PostContainer-TrackQ-Box-Top">
-                <label className="PostContainer-TrackQ-question">{question}</label>
-                {errors[`q${index + 1}`] && <span className="error-text">*필수 입력 항목입니다.</span>}
+                  <label className="PostContainer-TrackQ-question">{question}</label>
+                  {errors[`q${index + 1}`] && <span className="error-text">*필수 입력 항목입니다.</span>}
                 </div>
-                <textarea className={`PostContainer-TrackQ-answer ${errors[`q${index + 1}`]  ? 'error-input' : ''}`}
+                <textarea className={`PostContainer-TrackQ-answer ${errors[`q${index + 1}`] ? 'error-input' : ''}`}
                   placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} onChange={handleChange} />
-                
+
               </div>
             ))}
             <div className="PostContainer-TrackQ-Box">
               <label className="PostContainer-TrackQ-question">5. 역량을 확인할 수 있는 포트폴리오, Notion 링크가 있다면 첨부해주세요. (선택사항)</label>
               <textarea className="PostContainer-TrackQ-answer-link" placeholder="Notion 및 구글 드라이브와 같은 웹 링크를 첨부할 경우, 반드시 접근 권한 확인 후 첨부해주세요." type="text" name={"q5"} value={formData.q5} onChange={handleChange} />
             </div>
-            <div className="PostContainer-Submit"><button type="submit">지원서 제출하기</button></div>
+            <div className="PostContainer-Submit">
+              <button type="submit" disabled={isLoading}>
+                {isLoading ? "제출 중" : "지원서 제출하기"}
+                <img src={arrowRight}/>
+              </button>
+            </div>
           </div>
         )}
       </form>
