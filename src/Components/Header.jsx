@@ -13,7 +13,6 @@ function Header() {
 
   const handleJoin = () => {
     navigate('/Join');
-    window.location.reload();
   }
 
   return (

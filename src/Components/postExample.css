@@ -30,26 +30,33 @@
 
 .PostContainer {
   position: relative;
-  width: 1200px;
-  margin-top: 60px;
+  width: 100%;
+  margin-top: 90px;
   padding-bottom: 90px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 35px;
+  background-color: #F4F4F4;
 }
 
 .PostContainer-Title {
+  width: 1200px;
   font-family: 'Pretendard-Bold';
   font-size: 50px;
   white-space: nowrap;
+}
+
+.PostContainer-Notice-Box {
+  width: 1200px;
 }
 
 .PostContainer-Notice {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   gap: 10px;
   padding-left: 30px;
   width: 660px;
@@ -73,7 +80,7 @@
 }
 
 .PostContainer-Contents {
-  width: calc(100% - 30px);
+  width: 1170px;
   padding-left: 30px;
   display: flex;
   flex-direction: column;

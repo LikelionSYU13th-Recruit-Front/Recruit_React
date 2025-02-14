@@ -36,7 +36,9 @@
     align-items: center;
     padding-top: 161px;
     padding-bottom: 248px;
+    width: 100%;
     height: 2198px;
+    background-color: #121212;
 }
 
 .activity-header {

@@ -31,62 +31,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot'><Header /><RecruitMain /><RecruitAbout /><RecruitTrackIntro /><ActivityPage /></div>} />
-        <Route path="/Join" element={<div id='subroot'><Header /></div>} />
+        <Route path="/" element={<div id='subroot'><Header /><RecruitMain /><RecruitAbout /><RecruitTrackIntro /><ActivityPage /><BabyLionPage /><ReviewPage /><Schedule /><QNA /><Footer /></div>} />
+        <Route path="/Join" element={<div id='subroot'><Header /><PostExample /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>
 )
-
-ReactDOM.createRoot(document.getElementById('root2')).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<div id='subroot'><BabyLionPage /><ReviewPage /><Schedule /></div>} />
-        <Route path="/Join" element={<div id='subroot'><PostExample /></div>} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-)
-
-ReactDOM.createRoot(document.getElementById('root3')).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<div id='subroot'><QNA /><Footer /></div>} />
-        <Route path="/Join" element={<div id='subroot'></div>} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-)
-
 //모바일
 ReactDOM.createRoot(document.getElementById('root-mobile')).render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /></div>} />
-        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /></div>} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-)
-ReactDOM.createRoot(document.getElementById('root2-mobile')).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<div id='subroot-mobile'></div>} />
-        <Route path="/Join" element={<div id='subroot-mobile'><PostExample /></div>} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-)
-ReactDOM.createRoot(document.getElementById('root3-mobile')).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<div id='subroot-mobile'></div>} />
-        <Route path="/Join" element={<div id='subroot-mobile'></div>} />
+        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExample /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>

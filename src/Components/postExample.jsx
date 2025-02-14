@@ -114,11 +114,13 @@ function postExample() {
   return (
     <div className="PostContainer">
       <div className="PostContainer-Title">멋쟁이사자처럼 삼육대학교<br />13기 지원하기</div>
+      <div className="PostContainer-Notice-Box">
       <div className="PostContainer-Notice">
         <div className="PostContainer-Notice-Top">지원 전 읽어주세요!</div>
         <div className="PostContainer-Notice-Bottom">13기 삼육멋사 지원서는 제출 후 조회 및 수정이 불가능합니다.<br />
           재작성하여 다시 제출하더라도 최초 제출된 지원서로 평가되니,<br />
           제출 전 지원 내용을 신중히 검토하시기 바랍니다.</div>
+        </div>
       </div>
       <form className="PostContainer-Contents" onSubmit={handleSubmit}>
         <div className="PostContainer-InfoBox">
