@@ -1,0 +1,439 @@
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IntelOneMono-Medium';
+  src: url('../Fonts/IntelOneMono-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+
+.PostContainer {
+  position: relative;
+  width: 1200px;
+  margin-top: 60px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.PostContainer-Title {
+  font-family: 'Pretendard-Bold';
+  font-size: 50px;
+  white-space: nowrap;
+}
+
+.PostContainer-Notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 30px;
+  width: 660px;
+  height: 150px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.PostContainer-Notice-Top {
+  width: 100%;
+  font-family: 'Pretendard-Medium';
+  color: #FF469F;
+  text-align: left;
+}
+
+.PostContainer-Notice-Bottom {
+  width: 100%;
+  font-family: 'Pretendard-Medium';
+  color: #323232;
+  text-align: left;
+}
+
+.PostContainer-Contents {
+  width: calc(100% - 30px);
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+}
+
+.PostContainer-InfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.PostContainer-Contents-Name,
+.PostContainer-Contents-studentNum,
+.PostContainer-Contents-phoneNum,
+.PostContainer-Contents-email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 37px;
+}
+
+.PostContainer-Contents-email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 37px;
+}
+
+.PostContainer-Contents-Name-Label,
+.PostContainer-Contents-studentNum-Label,
+.PostContainer-Contents-phoneNum-Label,
+.PostContainer-Contents-email-Label {
+  width: 70px;
+  height: 40px;
+  font-family: 'Pretendard-Semibold';
+  font-size: 20px;
+  color: #323232;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.PostContainer-Contents-Name-Inputbox,
+.PostContainer-Contents-studentNum-Inputbox,
+.PostContainer-Contents-phoneNum-Inputbox,
+.PostContainer-Contents-email-Inputbox {
+  width: 165px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: 'Pretendard-Medium';
+  font-size: 14px;
+  color: #323232;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  outline: none;
+  padding-left: 16px;
+}
+
+.PostContainer-Contents-email-Inputbox {
+  display: flex;
+}
+
+.PostContainer-Contents-Name-Inputbox::placeholder,
+.PostContainer-Contents-studentNum-Inputbox::placeholder,
+.PostContainer-Contents-phoneNum-Inputbox::placeholder,
+.PostContainer-Contents-email-Inputbox::placeholder {
+  color: #D6D6D6;
+}
+
+.PostContainer-Contents-email-Box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.PostContainer-Contents-email-Notice {
+  color: #939393;
+  font-family: 'Pretendard-Medium';
+  font-size: 14px;
+}
+
+.PostContainer-ContentsSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.PostContainer-ContentsSelect-laptop,
+.PostContainer-ContentsSelect-session {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.PostContainer-ContentsSelect-laptop-label,
+.PostContainer-ContentsSelect-session-label,
+.PostContainer-ContentsSelect-Tracks-label {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 20px;
+  color: #323232;
+}
+
+.PostContainer-ContentsSelect-laptop-radio,
+.PostContainer-ContentsSelect-session-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PostContainer-ContentsSelect-laptop-radio label,
+.PostContainer-ContentsSelect-session-radio label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Pretendard-medium';
+  font-size: 14px;
+  color: #323232;
+}
+
+.PostContainer-ContentsSelect-laptop-radioButton,
+.PostContainer-ContentsSelect-session-radioButton {
+  appearance: none;
+  position: relative;
+  background-color: #FFFFFF;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #939393;
+  margin: 0;
+}
+
+.PostContainer-ContentsSelect-laptop-radioButton:checked,
+.PostContainer-ContentsSelect-session-radioButton:checked {
+  background-color: #1B9CFF;
+}
+
+.PostContainer-ContentsSelect-laptop-radioButton:checked::before,
+.PostContainer-ContentsSelect-session-radioButton:checked::before {
+  content: "";
+  width: 6.5px;
+  height: 6.5px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PostContainer-ContentsSelect-laptop-notice,
+.PostContainer-ContentsSelect-session-notice {
+  font-family: 'Pretendard-medium';
+  font-size: 14px;
+  color: #1B9CFF;
+  margin-left: 19px;
+}
+
+
+.PostContainer-ContentsSelect-Tracks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.PostContainer-ContentsSelect-Tracks-Buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.PostContainer-ContentsSelect-TracksD {
+  width: 126px;
+  height: 39px;
+  border: 1px solid #1B9CFF;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: 'Pretendard-SemiBold';
+  color: #1B9CFF;
+  cursor: pointer;
+}
+
+.PostContainer-ContentsSelect-TracksF {
+  width: 113px;
+  height: 39px;
+  border: 1px solid #1B9CFF;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: 'Pretendard-SemiBold';
+  color: #1B9CFF;
+  cursor: pointer;
+}
+
+.PostContainer-ContentsSelect-TracksB {
+  width: 88px;
+  height: 39px;
+  border: 1px solid #1B9CFF;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: 'Pretendard-SemiBold';
+  color: #1B9CFF;
+  cursor: pointer;
+}
+
+.PostContainer-ContentsSelect-TracksD-selected {
+  width: 126px;
+  height: 39px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1B9CFF;
+  font-family: 'Pretendard-SemiBold';
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+
+.PostContainer-ContentsSelect-TracksF-selected {
+  width: 113px;
+  height: 39px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1B9CFF;
+  font-family: 'Pretendard-SemiBold';
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+
+.PostContainer-ContentsSelect-TracksB-selected {
+  width: 88px;
+  height: 39px;
+  border-radius: 10px;
+  background-color: #1B9CFF;
+  border: none;
+  font-family: 'Pretendard-SemiBold';
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+
+.PostContainer-TrackQ {
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.PostContainer-TrackQ-Box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.PostContainer-TrackQ-Box-Top {
+  width: 948px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PostContainer-TrackQ-question {
+  font-family: 'Pretendard-SemiBold';
+}
+
+.PostContainer-TrackQ-answer {
+  width: 902px;
+  height: 159px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.PostContainer-TrackQ-answer-link {
+  width: 902px;
+  height: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.PostContainer-Submit {
+  width: 948px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.PostContainer-Submit button {
+  width: 204px;
+  height: 60px;
+  background-color: #1B9CFF;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 20px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 에러 발생시 변경 부분 */
+.error-text {
+  font-family: 'Pretendard-medium';
+  font-size: 14px;
+  color: #1B9CFF;
+}
+
+.PostContainer-Contents-Name-Inputbox.error-input, 
+.PostContainer-Contents-studentNum-Inputbox.error-input,
+.PostContainer-Contents-phoneNum-Inputbox.error-input, 
+.PostContainer-Contents-email-Inputbox.error-input {
+  width: 165px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #ECF7FF;
+  font-family: 'Pretendard-Medium';
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #1B9CFF;
+  outline: none;
+  padding-left: 16px;
+}
+
+.PostContainer-TrackQ-answer.error-input {
+  width: 902px;
+  height: 159px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #ECF7FF;
+  border: 1px solid #1B9CFF;
+  resize: none;
+  outline: none;
+}
