@@ -63,7 +63,7 @@ function RecruitTrackIntroMobile() {
                                 NPM
                             </div>
                             <div className="RecruitTrackIntro-Container-Body-FE-4-Mobile">
-                                AWS-CloudFront
+                                CloudFront
                             </div>
                             <div className="RecruitTrackIntro-Container-Body-FE-5-Mobile">
                                 Router, Link

@@ -28,43 +28,48 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
+
 #subroot {
-  width: 63%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
 }
 
 body,
 html {
   position: relative;
   margin: 0;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: transparent;
 }
-
 body {
+  width: 100%;
   flex-direction: column;
 }
 
 .RecuritMain-Main {
   position: relative;
-  width: 1200px;
+  width: 100%;
   height: 980px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  background-color: #121212;
 }
 
 .RecuritMain-Main-Title {
   position: relative;
   margin-top: 250px;
-  width: 1163px;
+  width: 1200px;
   height: 388px;
   font-family: 'IntelOneMono-Medium';
   font-size: 180px;
@@ -117,4 +122,5 @@ body {
   border-radius: 85px;
   font-family: 'Pretendard-Medium';
   font-size: 26px;
+  cursor: pointer;
 }

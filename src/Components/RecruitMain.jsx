@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import './RecruitMain.css';
 import PenAnimation from "./PenAnimation";
 import AnimatedPath from './AnimatedPath';
-import Header from './Header';
 
 function RecruitMain() {
 
@@ -31,6 +31,11 @@ function RecruitMain() {
 
   const [typedText, setTypedText] = useState([]);
 
+  const navigate = useNavigate();
+  const handleJoin = () => {
+    navigate('/Join');
+  }
+
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
@@ -46,9 +51,6 @@ function RecruitMain() {
   }, []);
   return (
     <div className="RecuritMain-Main">
-      {/* <Header /> */}
-      <AnimatedPath />
-      {/* <PenAnimation /> */}
       <div className="RecuritMain-Main-Title">
         {typedText.length > 0 &&
           typedText.map((item, index) =>
@@ -63,7 +65,7 @@ function RecruitMain() {
       </div>
       <div className="RecuritMain-Main-SubTitle">
         <div className="RecuritMain-Main-SubTitle-RecruitIntro">함께 성장할 삼육멋사 13기 아기사자를 모집합니다</div>
-        <div className="RecuritMain-Main-SubTitle-ApplyBtn">13기 지원하기</div>
+        <div className="RecuritMain-Main-SubTitle-ApplyBtn" onClick={handleJoin}>13기 지원하기</div>
       </div>
     </div>
   );

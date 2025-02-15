@@ -33,13 +33,13 @@
     width: 100%;
     height: auto;
     padding-top: 225px;
-    padding-bottom: 225px;
     color: #ffffff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 60px;
+    background-color: #121212;
 }
 
 .QNA-header-container {

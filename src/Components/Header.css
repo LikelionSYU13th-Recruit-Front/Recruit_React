@@ -21,13 +21,14 @@
     align-items: center;
     gap: 635px;
     z-index: 1000;
-    background-color: transparent;
+    background-color: #121212;
 }
 
 .Header-Main-Left,
 .Header-Main-Left img {
     width: 190px;
     height: 55px;
+    cursor: pointer;
 }
 
 .Header-Main-Right {

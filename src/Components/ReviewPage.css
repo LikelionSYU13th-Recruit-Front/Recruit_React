@@ -144,6 +144,7 @@
     /*좌우 패딩값을 빼줘야함*/
     display: flex;
     align-items: center;
+    justify-content: center;
     /* 헤더 내부 정렬 */
     padding-top: 51px;
     padding-left: 49px;
@@ -186,7 +187,7 @@
     padding-right: 1037px;
 }
 
-.lion-logo {
+.lion-logo2 {
     width: 28px;
     height: 28px;
     padding-right: 12px;

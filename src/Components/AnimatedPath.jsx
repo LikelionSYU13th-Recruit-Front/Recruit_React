@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import penIcon from '../images/penIcon.png';
 import "./AnimatedPath.css";
 
 function AnimatedPath() {

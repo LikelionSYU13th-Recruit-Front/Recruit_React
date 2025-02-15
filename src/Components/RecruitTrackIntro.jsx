@@ -3,9 +3,11 @@ import './RecruitTrackIntro.css';
 function RecruitTrackIntro() {
     return (
         <div className="RecruitTrackIntro-Container">
-            <div className="RecruitTrackIntro-Container-Title">
-                멋쟁이사자처럼 삼육대학교만의<br />
-                세분화된 <span>트랙별 커리큘럼</span>
+            <div className="RecruitTrackIntro-Container-Header">
+                <div className="RecruitTrackIntro-Container-Title">
+                    멋쟁이사자처럼 삼육대학교만의<br />
+                    세분화된 <span>트랙별 커리큘럼</span>
+                </div>
             </div>
             <div className="RecruitTrackIntro-Container-Body">
                 <div className="RecruitTrackIntro-Container-Body-Design">

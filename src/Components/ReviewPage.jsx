@@ -23,7 +23,7 @@ function ReviewPage() {
                 <div className='review-design-boxes'>
                     <div className='review-box-1'>
                         <div className='review-box-header'>
-                            <img src={PinkLion} className='lion-logo' />
+                            <img src={PinkLion} className='lion-logo2' />
                             <p className='header-title-design'>든든한 인생 서포터</p>
                             <p className='header-name-1'>현O진</p>
                         </div>
@@ -41,7 +41,7 @@ function ReviewPage() {
                     </div>
                     <div className='review-box-2'>
                         <div className='review-box-header'>
-                            <img src={PinkLion} className='lion-logo' />
+                            <img src={PinkLion} className='lion-logo2' />
                             <p className='header-title-design'>기획, 디자인에 관심있는 누구나</p>
                             <p className='header-name-2'>김O나</p>
                         </div>
@@ -62,7 +62,7 @@ function ReviewPage() {
                 <div className='review-frontend-boxes'>
                     <div className='review-box-1'>
                         <div className='review-box-header'>
-                            <img src={BlueLion} className='lion-logo' />
+                            <img src={BlueLion} className='lion-logo2' />
                             <p className='header-title-frontend'>멋사 더 빨리 들어갈 걸</p>
                             <p className='header-name-3'>심O영</p>
                         </div>
@@ -80,7 +80,7 @@ function ReviewPage() {
                     </div>
                     <div className='review-box-2'>
                         <div className='review-box-header'>
-                            <img src={BlueLion} className='lion-logo' />
+                            <img src={BlueLion} className='lion-logo2' />
                             <p className='header-title-frontend'>멋사는 하는게 이득!</p>
                             <p className='header-name-4'>장O익</p>
                         </div>
@@ -101,7 +101,7 @@ function ReviewPage() {
                 <div className='review-backend-boxes'>
                     <div className='review-box-1'>
                         <div className='review-box-header'>
-                            <img src={YellowLion} className='lion-logo' />
+                            <img src={YellowLion} className='lion-logo2' />
                             <p className='header-title-backend'>모두가 알았으면 하는 멋사</p>
                             <p className='header-name-5'>권O진</p>
                         </div>
@@ -119,7 +119,7 @@ function ReviewPage() {
                     </div>
                     <div className='review-box-2'>
                         <div className='review-box-header'>
-                            <img src={YellowLion} className='lion-logo' />
+                            <img src={YellowLion} className='lion-logo2' />
                             <p className='header-title-backend'>개발 자신감을 지탱하는 디딤돌</p>
                             <p className='header-name-6'>김O현</p>
                         </div>
