@@ -34,7 +34,7 @@ function Schedule() {
             <div className="dot2-container">
                 <div className="dot2-text">
                     02/27(목) - 03/9 (일) <br />
-                    <span>서류 모집</span>
+                    <span>서류 모집 (18시 마감)</span>
                 </div>
                 <div className="dot2-img">
                     <img src={dot2} alt="" />
