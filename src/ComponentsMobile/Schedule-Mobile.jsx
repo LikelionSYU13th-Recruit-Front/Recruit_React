@@ -1,3 +1,5 @@
+import "./Schedule-Mobile.css"
+
 export default function ScheduleMobile(){
 
     const daysOfWeekM = ["일", "월", "화", "수", "목", "금", "토"];
@@ -20,7 +22,7 @@ export default function ScheduleMobile(){
         <div className="scheduleMobile-container">
 
             <div className="scheduleM-title">
-                멋쟁이사자처럼 삼육대학교
+                멋쟁이사자처럼 삼육대학교<br />
                 13기 모집일정
             </div>
 
@@ -70,36 +72,31 @@ export default function ScheduleMobile(){
             </div>
 
             <div className="scheduleM-detail">
-                <div className="scheduleM-detail-1">
-                    <div className="point"></div>
+                <div className="point-circle">
+                    <div className="circle1"></div>
+                    <div className="circle2"></div>
+                    <div className="circle3"></div>
+                    <div className="circle4"></div>
+                </div>
+                <div className="schedule-detail-text">
                     <div className="schedule-detail-1-text">
-                        02/27(목) - 03/12(수) 
+                        02/27(목) - 03/12(수) <br /> 
                         <span>서류 모집 (18시 마감)</span>
                     </div>
-                </div>
-                <div className="scheduleM-detail-2">
-                    <div className="point"></div>
                     <div className="schedule-detail-2-text">
-                        03/12(수) 
+                        03/12(수) <br />
                         <span>서류 평가</span>
                     </div>
-                </div>
-                <div className="scheduleM-detail-3">
-                    <div className="point"></div>
                     <div className="schedule-detail-3-text">
-                        3/14(금)-3/16(일) 
+                        3/14(금)-3/16(일) <br />
                         <span>면접</span>
                     </div>                    
-                </div>
-                <div className="scheduleM-detail-4">
-                    <div className="point"></div>
                     <div className="schedule-detail-4-text">
-                        03/16(일)
+                        03/16(일) <br />
                         <span>면접 결과 발표</span>
                     </div>   
                 </div>
             </div>
-
         </div>
     )
 }
