@@ -29,7 +29,7 @@
 }
 
 .QNAMobile-container{
-    min-height: 668px;
+    min-height: 648px;
     width: 100%;
     height: auto;
     padding-top: 74px;
@@ -91,7 +91,7 @@ ul {
     border: 2px solid #323232;
     display:flex;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding: 10px 15px;
     flex-direction: row;
     align-items: center;
     font-family: 'Pretendard-Regular';
@@ -101,6 +101,7 @@ ul {
     color: #ffffff;
     margin-bottom: 15px;
 }
+
 
 .QNAMobileContents-menu img{
     width: 22px;
@@ -116,7 +117,7 @@ ul {
     border: 2px solid #323232;
     display:flex;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding: 10px 15px;
     text-align: left;
     flex-direction: row;
     align-items: center;
@@ -140,7 +141,7 @@ ul {
     font-weight: 400;
     line-height: 18px;
     white-space: pre-line;
-    padding: 12px 15px;
+    padding: 10px 15px;
     margin-bottom: 25px;
 }
 

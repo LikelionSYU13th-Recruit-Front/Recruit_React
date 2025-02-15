@@ -28,6 +28,8 @@ import RecruitAboutMobile from './ComponentsMobile/RecruitAbout-Mobile.jsx';
 import RecruitTrackIntroMobile from './ComponentsMobile/RecruitTrackIntro-Mobile.jsx';
 import ScheduleMobile from './ComponentsMobile/Schedule-Mobile.jsx'
 import QNAMobile from "./ComponentsMobile/QNAMobile.jsx"
+import AskLinkPage from "./ComponentsMobile/AskLink.jsx"
+import FooterMobile from "./ComponentsMobile/Footer-Mobile.jsx"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -46,7 +48,7 @@ ReactDOM.createRoot(document.getElementById('root-mobile')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /><ScheduleMobile/><QNAMobile/></div>} />
+        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /><ScheduleMobile/><QNAMobile/><AskLinkPage/><FooterMobile/></div>} />
         <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExample /></div>} />
       </Routes>
     </Router>
