@@ -28,68 +28,48 @@
     font-style: normal;
 }
 
-.QNA-container{
-    min-height: 908px;
+.QNAMobile-container{
+    min-height: 668px;
     width: 100%;
     height: auto;
-    padding-top: 225px;
+    padding-top: 74px;
     color: #ffffff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 10px;
     background-color: #121212;
 }
 
-.QNA-header-container {
+.QNAMobile-header-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 350px;
+    /* gap: 350px; */
+    margin-right: 90px;
+    margin-bottom: 15px;
 }
 
-.QNA-header-mainText{
+.QNAMobile-header-mainText{
     font-family: 'Pretendard-Bold';
-    font-size: 50px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 59.67px;
+    line-height: 28px;
     text-align: left; 
-    margin-bottom: 25px;
+    margin-bottom: 7px;
 }
 
-.QNA-header-subText{
+.QNAMobile-header-subText{
     color: #939393;
     font-family: 'Pretendard-SemiBold';
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 28.64px;
     text-align: left;   
 }
 
-.QNA-header-Icon{
-    width: 250px;
-    margin-top: 10px;
-}
-
-.QNA-header-mouseIcon img{
-    width: 32.28px;
-    height: 38.73px;
-    margin-bottom: 10px;
-}
-
-.QNA-header-mouseIconText{
-    width: 225px;
-    height: 56px;
-    border: 2px solid #005BA1;
-    background-color: #1B9CFF;
-    border-radius: 0px 50px 50px 50px ;
-    text-align: center;
-    display: inline;
-    padding: 12px 20px 12px 20px;
-    margin-left: 30px;
-}
-.QNA-qna-container{
+.QNAMobile-QNA-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -102,64 +82,68 @@ ul {
     padding-right: 16px;
 }
 
-.qnaContents-menu{
-    width: 1106px;
-    height: 80px;
-    border-radius: 14px;
+.QNAMobileContents-menu{
+    white-space: pre-line;
+    text-align: left;
+    width: 308px;
+    height: auto;
+    border-radius: 8px;
     border: 2px solid #323232;
     display:flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+    padding: 12px 15px;
     flex-direction: row;
     align-items: center;
     font-family: 'Pretendard-Regular';
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 26.25px;
+    line-height: 18px;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
-.qnaContents-menu img{
-    width: 30px;
-    height: 30px;
+.QNAMobileContents-menu img{
+    width: 22px;
+    height: 22px;
     cursor: pointer;
 }
 
-.qnaContents-menu-active{
-    width: 1106px;
-    height: 80px;
-    border-radius: 14px 14px 0px 0px;
+.QNAMobileContents-menu-active{
+    white-space: pre-line;
+    width: 308px;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
     border: 2px solid #323232;
     display:flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+    padding: 12px 15px;
+    text-align: left;
     flex-direction: row;
     align-items: center;
     font-family: 'Pretendard-Regular';
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26.25px;
+    line-height: 18px;
     color: #ffffff;
     background-color: #323232;
     margin-bottom: 0px;
 }
 
-.qnaAnswer-menu{
-    width: 1086px;
+.QNAMobileAnswer-menu{
+    width: 308px;
     height: auto;
     border: 2px solid #323232;
-    border-radius: 0px 0px 14px 14px;
+    border-radius: 0px 0px 8px 8px;
     text-align: left;
     font-family: 'Pretendard-Regular';
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26.25px;
+    line-height: 18px;
     white-space: pre-line;
-    padding: 30px 10px 30px 70px;
+    padding: 12px 15px;
     margin-bottom: 25px;
+}
+
+.line-change{
+    margin-left: 25px;
 }
