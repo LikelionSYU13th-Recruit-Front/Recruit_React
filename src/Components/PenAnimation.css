@@ -1,0 +1,8 @@
+.pen-animated-path-container {
+  position: absolute;
+  top: 0;
+  left: -360px;
+  display: flex;
+  align-items: flex-start;
+  z-index: 2;
+}

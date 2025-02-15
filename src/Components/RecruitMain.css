@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IntelOneMono-Medium';
+  src: url('../Fonts/IntelOneMono-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+#subroot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+body,
+html {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+body {
+  width: 100%;
+  flex-direction: column;
+}
+
+.RecuritMain-Main {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.RecuritMain-Main-Title {
+  position: relative;
+  margin-top: 250px;
+  width: 1200px;
+  height: 388px;
+  font-family: 'IntelOneMono-Medium';
+  font-size: 180px;
+  color: #FFFFFF;
+  z-index: 9999;
+  line-height: 194px;
+  white-space: nowrap;
+}
+
+.RecuritMain-Main-Title-1 {
+  color: #BDFF8B;
+}
+
+.RecuritMain-Main-Title-2 {
+  color: #FF469F;
+}
+
+.RecuritMain-Main-Title-3 {
+  color: #1B9CFF;
+}
+
+.RecuritMain-Main-Title-4,
+.RecuritMain-Main-Title-5 {
+  color: #FFBE63;
+}
+
+.RecuritMain-Main-SubTitle {
+  position: relative;
+  margin-top: 34px;
+  height: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 426px;
+}
+
+.RecuritMain-Main-SubTitle-RecruitIntro {
+  font-family: 'Pretendard-Medium';
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.RecuritMain-Main-SubTitle-ApplyBtn {
+  width: 265px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 85px;
+  font-family: 'Pretendard-Medium';
+  font-size: 26px;
+  cursor: pointer;
+}

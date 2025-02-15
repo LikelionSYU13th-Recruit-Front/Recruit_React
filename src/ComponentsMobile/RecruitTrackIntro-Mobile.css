@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+.RecruitTrackIntro-Container-Mobile {
+    width: 100%;
+    height: 658px;
+    padding-top: 60px;
+    padding-bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.RecruitTrackIntro-Container-Title-Mobile  {
+    width: 342px;
+    text-align: left;
+    font-family: 'Pretendard-Bold';
+    font-size: 24px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.RecruitTrackIntro-Container-Title-Mobile  span {
+    color: #FFBE63;
+}
+
+.RecruitTrackIntro-Container-Body-Mobile  {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-Mobile, .RecruitTrackIntro-Container-Body-FE-Mobile, .RecruitTrackIntro-Container-Body-BE-Mobile  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-Top-Mobile , .RecruitTrackIntro-Container-Body-FE-Top-Mobile , .RecruitTrackIntro-Container-Body-BE-Top-Mobile  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 34px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-Title-Mobile , .RecruitTrackIntro-Container-Body-FE-Title-Mobile , .RecruitTrackIntro-Container-Body-BE-Title-Mobile  {
+    font-family: 'Pretendard-Bold';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.RecruitTrackIntro-Container-Body-Design-Description-Mobile , .RecruitTrackIntro-Container-Body-FE-Description-Mobile , .RecruitTrackIntro-Container-Body-BE-Description-Mobile  {
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    color: #939393;
+}
+
+.RecruitTrackIntro-Container-Body-Design-Bottom-Mobile , .RecruitTrackIntro-Container-Body-FE-Bottom-Mobile , .RecruitTrackIntro-Container-Body-BE-Bottom-Mobile  {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-top-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-bottom-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-Design-1-Mobile {
+    background-color: #F276B2;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.RecruitTrackIntro-Container-Body-Design-2-Mobile {
+    background-color: #FF469F;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.RecruitTrackIntro-Container-Body-Design-3-Mobile {
+    background-color: #E22E85;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+
+}
+
+.RecruitTrackIntro-Container-Body-Design-4-Mobile {
+    background-color: #D33D85;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+
+.RecruitTrackIntro-Container-Body-FE-top-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-FE-bottom-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-FE-1-Mobile {
+    background-color: #53D130;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.RecruitTrackIntro-Container-Body-FE-2-Mobile {
+    background-color: #81BD70;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.RecruitTrackIntro-Container-Body-FE-3-Mobile {
+    background-color: #68CE4C;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+
+}
+
+.RecruitTrackIntro-Container-Body-FE-4-Mobile {
+    background-color: #57CE67;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.RecruitTrackIntro-Container-Body-FE-5-Mobile {
+    background-color: #48A555;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+
+
+.RecruitTrackIntro-Container-Body-BE-top-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-BE-bottom-Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+.RecruitTrackIntro-Container-Body-BE-1-Mobile {
+    background-color: #E89C32;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.RecruitTrackIntro-Container-Body-BE-2-Mobile {
+    background-color: #DFA34F;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.RecruitTrackIntro-Container-Body-BE-3-Mobile {
+    background-color: #CD8F38;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+
+}
+
+.RecruitTrackIntro-Container-Body-BE-4-Mobile {
+    background-color: #FFBE63;
+    border-radius: 30px;
+    width: 94px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #FFFFFF
+}

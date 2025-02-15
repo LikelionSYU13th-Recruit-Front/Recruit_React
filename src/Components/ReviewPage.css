@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.reviewpage-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 1770px;
+}
+
+.review-header {
+    position: relative;
+    width: 100%;
+    margin-top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review-header-content {
+    position: relative;
+    margin: 0;
+    font-family: 'Pretendard-Bold';
+    font-size: 50px;
+    color: #323232;
+    padding-right: 646.5px;
+}
+
+.review-header-blue {
+    color: #1B9CFF;
+}
+
+.header-arrow {
+    width: 32.38;
+    height: 38.73px;
+    margin-right: 60px;
+    margin-top: 100px;
+    position: absolute;
+
+}
+
+.from-12th {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1B9CFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 160px;
+}
+
+.from-text {
+    color: #FFFFFF;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+}
+
+.review-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.review-frontend-boxes,
+.review-backend-boxes,
+.review-design-boxes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 62px;
+    margin-top: 30px;
+}
+
+.review-box-2,
+.review-box-1 {
+    position: relative;
+    width: 550px;
+    height: 290px;
+    border: none;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    /* 세로 정렬로 변경 */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.review-box-header {
+    position: relative;
+    width: calc(100% - 109px);
+    /*좌우 패딩값을 빼줘야함*/
+    display: flex;
+    align-items: center;
+    /* 헤더 내부 정렬 */
+    padding-top: 51px;
+    padding-left: 49px;
+    padding-right: 60px;
+    /* position: absolute;
+    top: 0; */
+
+}
+
+
+.review-track-frontend,
+.review-track-backend,
+.review-track-design {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 30px;
+    color: #323232;
+}
+
+.review-track-backend,
+.review-track-frontend {
+    position: relative;
+    margin: 0;
+    margin-top: 70px;
+}
+
+.review-track-design {
+    position: relative;
+    margin: 0;
+    margin-top: 100px;
+    padding-right: 880px;
+}
+
+.review-track-frontend {
+    position: relative;
+    padding-right: 990px;
+}
+
+.review-track-backend {
+    position: relative;
+    padding-right: 1037px;
+}
+
+.lion-logo {
+    width: 28px;
+    height: 28px;
+    padding-right: 12px;
+}
+
+
+.header-name-1,
+.header-name-2,
+.header-name-3,
+.header-name-4,
+.header-name-5,
+.header-name-6,
+.header-title-design,
+.header-title-frontend,
+.header-title-backend {
+    margin: 0;
+}
+
+.header-name-1,
+.header-name-2,
+.header-name-3,
+.header-name-4,
+.header-name-5,
+.header-name-6 {
+    position: relative;
+    margin-left: auto;
+    padding-top: 14px;
+    color: #939393;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 12px;
+}
+
+.header-title-design,
+.header-title-frontend,
+.header-title-backend {
+    position: relative;
+    padding-top: 1px;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 24px;
+}
+
+.header-title-design {
+    color: #FF469F;
+}
+
+.header-title-frontend {
+    color: #1B9CFF;
+}
+
+.header-title-backend {
+    color: #FFBE63;
+}
+
+
+.review-content-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 34px
+}
+
+
+.review-content {
+    position: relative;
+    margin: 0;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+    color: #323232;
+
+}

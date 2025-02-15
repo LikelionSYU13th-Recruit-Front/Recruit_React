@@ -6,7 +6,7 @@ import dot15 from "../images/15dot.png"
 
 
 
-function schedulePage() {
+function Schedule() {
     const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
     const weeks = [
         [23, 24, 25, 26, 27, 28, "3/1"],
@@ -117,4 +117,4 @@ function schedulePage() {
     );
 }
 
-export default schedulePage;
+export default Schedule;

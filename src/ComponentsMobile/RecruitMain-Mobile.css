@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntelOneMono-Medium';
+    src: url('../Fonts/IntelOneMono-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+#subroot-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.RecuritMain-Main-Mobile {
+    position: relative;
+    width: 100%;
+    height: 689px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 247px;
+}
+
+.RecuritMain-Main-Title-Mobile {
+    position: relative;
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    height: 200px;
+    font-family: 'IntelOneMono-Medium';
+    font-size: 62px;
+    color: #FFFFFF;
+    z-index: 9999;
+    line-height: 66.86px;
+    white-space: nowrap;
+}
+
+.RecuritMain-Main-Title-Mobile-1 {
+    color: #BDFF8B;
+}
+
+.RecuritMain-Main-Title-Mobile-2 {
+    color: #FF469F;
+}
+
+.RecuritMain-Main-Title-Mobile-3 {
+    color: #1B9CFF;
+}
+
+.RecuritMain-Main-Title-Mobile-4,
+.RecuritMain-Main-Title-Mobile-5 {
+    color: #FFBE63;
+}
+
+.RecuritMain-Main-SubTitle-Mobile {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.RecuritMain-Main-SubTitle-RecruitIntro-Mobile {
+    font-family: 'Pretendard-Medium';
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.RecuritMain-Main-SubTitle-ApplyBtn-Mobile {
+    width: 137px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 85px;
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}

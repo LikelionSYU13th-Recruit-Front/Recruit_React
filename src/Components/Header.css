@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+.Header-Main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 635px;
+    z-index: 1000;
+    background-color: #121212;
+}
+
+.Header-Main-Left,
+.Header-Main-Left img {
+    width: 190px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.Header-Main-Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    color: #FFFFFF;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+}
+
+.Header-Main-Right-ABOUT, .Header-Main-Right-FAQ {
+    cursor: pointer;
+}
+
+.Header-Main-Right-APPLY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 52px;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 18px;
+    color: #121212;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}

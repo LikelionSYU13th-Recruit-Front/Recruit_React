@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+.ActivityPage-Container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 161px;
+    padding-bottom: 248px;
+    width: 100%;
+    height: 2198px;
+    background-color: #121212;
+}
+
+.activity-header {
+    position: relative;
+    height: 550px;
+    display: flex;
+    justify-content: center;   
+}
+
+.activity-header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-penImg {
+    width: 767px;
+    height: 439px;
+    padding-left: 140px; /* 왼쪽으로 이동하여 텍스트와 겹치게 */
+    z-index: 1; /* 제목보다 뒤에 배치 */
+}
+
+.activity-title {
+    position: relative;
+    margin: 0;
+    padding-top: 300px;
+    margin-right: -320px; /* 오른쪽으로 이동하여 이미지와 겹치게 */
+    z-index: 2; /* 이미지 위로 배치 */
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Pretendard-Bold';
+}
+
+.activity-subtitle{
+    color: #939393;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 24px;
+}
+
+.activity-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start */
+}
+
+
+.activity-body-session {
+    width: 100%;
+    position: relative;
+    padding-top: 110px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+
+.python-img,
+.idea-img,
+.hack-img,
+.session-img {
+    width: 560px;
+    height: 340px;
+}
+
+/* .activity-body-desc-3,
+.activity-body-desc-2,
+.activity-body-desc-1 {
+    padding-top: 50px;
+} */
+
+.desc-num {
+    color: #939393;
+    font-family: 'Pretendard-Medium';
+    font-size: 30px;
+}
+
+.desc-name {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.pink-color {
+    color: #FF469F;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.desc-main {
+    color: #939393;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+}
+
+.activity-body-idea {
+    position: relative;
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.activity-body-desc-2, 
+.activity-body-desc-4 {
+    text-align: right;
+    margin-left: auto;
+}
+
+
+.blue-color {
+    color: #1B9CFF;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.activity-body-hack{
+    position: relative;
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.green-color {
+    color: #BDFF8B;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
+
+.activity-body-python {
+    position: relative;
+    width: 100%;
+    padding-top: 87px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.yellow-color {
+    color: #FFBE63;
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+}
