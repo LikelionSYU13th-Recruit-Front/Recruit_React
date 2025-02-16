@@ -5,6 +5,7 @@ import './Components/RecruitMain.css';
 
 //pc
 // 준
+import AnimatedPath from './Components/AnimatedPath.jsx';
 import Header from './Components/Header.jsx';
 import RecruitMain from './Components/RecruitMain.jsx'
 import RecruitAbout from './Components/RecruitAbout.jsx';
@@ -32,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot'><Header /><RecruitMain /><RecruitAbout /><RecruitTrackIntro /><ActivityPage /><BabyLionPage /><ReviewPage /><Schedule /><QNA /><Footer /></div>} />
+        <Route path="/" element={<div id='subroot'><Header /><AnimatedPath /><RecruitMain /><RecruitAbout /><RecruitTrackIntro /><ActivityPage /><BabyLionPage /><ReviewPage /><Schedule /><QNA /><Footer /></div>} />
         <Route path="/Join" element={<div id='subroot'><Header /><PostExample /></div>} />
         <Route path="/Complete" element={<div id='subroot'><Header /><Complete /></div>} />
       </Routes>

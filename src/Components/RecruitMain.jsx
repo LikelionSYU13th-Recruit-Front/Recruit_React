@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import './RecruitMain.css';
+import penTool1 from '../images/main pentool 1.png';
 import PenAnimation from "./PenAnimation";
 import AnimatedPath from './AnimatedPath';
 

@@ -61,14 +61,14 @@ body {
   height: 980px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #121212;
 }
 
 .RecuritMain-Main-Title {
   position: relative;
-  margin-top: 250px;
+  margin-top: 20%;
   width: 1200px;
   height: 388px;
   font-family: 'IntelOneMono-Medium';
@@ -122,5 +122,6 @@ body {
   border-radius: 85px;
   font-family: 'Pretendard-Medium';
   font-size: 26px;
+  z-index: 99999;
   cursor: pointer;
 }

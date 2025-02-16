@@ -1,8 +1,14 @@
 .animated-path-container {
     position: absolute;
+    width: 100%;
     top: 0;
-    left: -360px;
+    left: -90px;
     display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 1002;
+  }
+
+  .animated-path-container svg{
+    width: 100%;
   }

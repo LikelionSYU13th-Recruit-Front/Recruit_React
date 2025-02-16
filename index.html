@@ -6,13 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIKELION13TH</title>
   <style>
-    /* ✅ 기본적으로 모든 요소를 숨김 */
     #root,
     #root-mobile {
       display: none !important;
     }
-
-    /* ✅ PC (1920px 이상)에서는 root 요소 표시 */
     @media (min-width: 1200px) {
       #root {
         position: relative;
@@ -24,8 +21,6 @@
         align-items: center;
       }
     }
-
-    /* ✅ 모바일 (1920px 이하)에서는 모바일 전용 root 표시 */
     @media (max-width: 1199px) {
       #root-mobile {
         position: relative;
@@ -41,9 +36,7 @@
 </head>
 
 <body>
-  <!-- ✅ PC 전용 -->
   <div id="root"></div>
-  <!-- ✅ 모바일 전용 -->
   <div id="root-mobile"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
