@@ -32,6 +32,8 @@ import RecruitTrackIntroMobile from './ComponentsMobile/RecruitTrackIntro-Mobile
 import ActivityMobile from './ComponentsMobile/Activity-Mobile.jsx';
 import BabyLionMobile from './ComponentsMobile/BabyLion-Mobile.jsx';
 import ReviewMobile from './ComponentsMobile/Review-Mobile.jsx';
+import PostExampleMobile from './ComponentsMobile/postExample-Mobile.jsx';
+import CompleteMobile from './ComponentsMobile/Complete-Mobile.jsx';
 
 
 
@@ -52,7 +54,8 @@ ReactDOM.createRoot(document.getElementById('root-mobile')).render(
     <Router>
       <Routes>
         <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /><ActivityMobile/><BabyLionMobile/><ReviewMobile/></div>} />
-        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExample /></div>} />
+        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExampleMobile /></div>} />
+        <Route path="/Complete" element={<div id='subroot'><HeaderMobile /><CompleteMobile /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>

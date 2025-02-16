@@ -222,7 +222,6 @@ function postExample() {
           <div className="PostContainer-ContentsSelect-Tracks">
             <div className="PostContainer-ContentsSelect-Tracks-label">3. 지원 트랙 선택해주세요.</div>
             <div className="PostContainer-ContentsSelect-Tracks-Buttons">
-
               <button type="button" onClick={() => handleTrackSelect("PRODUCT_DESIGN")} className={selectedTrack === "PRODUCT_DESIGN" ?
                 "PostContainer-ContentsSelect-TracksD-selected" : "PostContainer-ContentsSelect-TracksD"}>기획・디자인 트랙</button>
               <button type="button" onClick={() => handleTrackSelect("FRONTEND")} className={selectedTrack === "FRONTEND" ?
