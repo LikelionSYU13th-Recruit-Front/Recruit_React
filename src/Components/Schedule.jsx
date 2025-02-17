@@ -1,4 +1,5 @@
 import "./Schedule.css";
+import { Element } from 'react-scroll';
 import dot2 from "../images/2dot.png"
 import dot16 from "../images/16dot.png"
 import dot12 from "../images/12dot.png"
@@ -25,7 +26,7 @@ function Schedule() {
 
 
     return (
-        <div className="schedule-container">
+        <Element name="schedule" className="schedule-container">
             <div className="schedule-title">
                 멋쟁이사자처럼 삼육대학교 <br />
                 13기 모집일정
@@ -113,7 +114,7 @@ function Schedule() {
                     ))}
                 </div>
             </div>
-        </div>
+        </Element>
     );
 }
 

@@ -1,4 +1,5 @@
 import "./Schedule-Mobile.css"
+import { Element } from 'react-scroll';
 
 export default function ScheduleMobile(){
 
@@ -19,7 +20,7 @@ export default function ScheduleMobile(){
     const leftFilledDatesM = [12];
 
     return(
-        <div className="scheduleMobile-container">
+        <Element name="scheduleMobile" className="scheduleMobile-container">
 
             <div className="scheduleM-title">
                 멋쟁이사자처럼 삼육대학교<br />
@@ -97,6 +98,6 @@ export default function ScheduleMobile(){
                     </div>   
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
