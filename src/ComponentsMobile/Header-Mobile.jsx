@@ -8,7 +8,6 @@ function HeaderMobile() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // 라우트 이동 후 특정 위치로 스크롤
   useEffect(() => {
     if (location.hash) {
       scroller.scrollTo(location.hash.replace('#', ''), {
@@ -28,7 +27,7 @@ function HeaderMobile() {
 
   const handleScrollTo = (section) => {
     if (location.pathname !== '/') {
-      navigate(`/#${section}`); // 이동 후 해시값 설정
+      navigate(`/#${section}`);
     } else {
       scroller.scrollTo(section, { smooth: true, duration: 1500 });
     }

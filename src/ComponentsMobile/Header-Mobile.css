@@ -28,6 +28,7 @@
 .Header-Main-Left-Mobile img {
     width: 117px;
     height: 33px;
+    cursor: pointer;
 }
 
 .Header-Main-Right-Mobile {

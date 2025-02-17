@@ -1,33 +1,59 @@
-import { Link } from 'react-scroll';
-import { useNavigate } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './Header.css';
 import logo13th from '../images/logo13th2.png';
 
 function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      scroller.scrollTo(location.hash.replace('#', ''), {
+        smooth: true,
+        duration: 1500,
+      });
+    }
+  }, [location]);
 
   const handleMain = () => {
     navigate('/');
-    window.location.reload();
-  }
+  };
 
   const handleJoin = () => {
     navigate('/Join');
-  }
+  };
+
+  const handleScrollTo = (section) => {
+    if (location.pathname !== '/') {
+      navigate(`/#${section}`);
+    } else {
+      scroller.scrollTo(section, { smooth: true, duration: 1500 });
+    }
+  };
 
   return (
     <div className="Header-Main">
       <div className="Header-Main-Left">
-        <img src={logo13th} alt="logo13th" onClick={handleMain}/>
+        <img src={logo13th} alt="logo13th" onClick={handleMain} />
       </div>
       <div className="Header-Main-Right">
-        <Link to="RecruitAbout" smooth={true} duration={500} className="Header-Main-Right-ABOUT">
+        <div
+          className="Header-Main-Right-ABOUT"
+          onClick={() => handleScrollTo('RecruitAbout')}
+        >
           ABOUT
-        </Link>
-        <Link to="FAQ" smooth={true} duration={1800} className="Header-Main-Right-FAQ">
+        </div>
+        <div
+          className="Header-Main-Right-FAQ"
+          onClick={() => handleScrollTo('FAQ')}
+        >
           FAQ
-        </Link>
-        <div className="Header-Main-Right-APPLY" onClick={handleJoin}>13기 지원하기</div>
+        </div>
+        <div className="Header-Main-Right-APPLY" onClick={handleJoin}>
+          13기 지원하기
+        </div>
       </div>
     </div>
   );
