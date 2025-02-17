@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+.QNAMobile-container{
+    min-height: 620px;
+    width: 100%;
+    height: auto;
+    padding-top: 74px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #121212;
+}
+
+.QNAMobile-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.QNAMobile-header-mainText{
+    font-family: 'Pretendard-Bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left; 
+    margin-bottom: 7px;
+}
+
+.QNAMobile-header-subText{
+    width: 342px;
+    color: #939393;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28.64px;
+    text-align: left;   
+}
+
+.QNAMobile-QNA-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.QNAMobileContents-menu{
+    white-space: pre-line;
+    text-align: left;
+    width: 308px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #323232;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.QNAMobileContents-menu img{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.QNAMobileContents-menu-active{
+    white-space: pre-line;
+    width: 308px;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+    border: 2px solid #323232;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #323232;
+    margin-bottom: 0px;
+}
+
+.QNAMobileAnswer-menu{
+    width: 308px;
+    height: auto;
+    border: 2px solid #323232;
+    border-radius: 0px 0px 8px 8px;
+    text-align: left;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: pre-line;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+}
+
+.line-change{
+    margin-left: 25px;
+}

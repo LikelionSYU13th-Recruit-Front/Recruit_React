@@ -1,28 +1,60 @@
-import { Link } from 'react-scroll';
-import { useNavigate } from 'react-router-dom';
+import { Link, scroller } from 'react-scroll';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './Header-Mobile.css';
 import logo13th from '../images/logo13th2.png';
 
 function HeaderMobile() {
-  
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // 라우트 이동 후 특정 위치로 스크롤
+  useEffect(() => {
+    if (location.hash) {
+      scroller.scrollTo(location.hash.replace('#', ''), {
+        smooth: true,
+        duration: 1500,
+      });
+    }
+  }, [location]);
+
+  const handleMain = () => {
+    navigate('/');
+  };
+
   const handleJoin = () => {
     navigate('/Join');
-  }
+  };
+
+  const handleScrollTo = (section) => {
+    if (location.pathname !== '/') {
+      navigate(`/#${section}`); // 이동 후 해시값 설정
+    } else {
+      scroller.scrollTo(section, { smooth: true, duration: 1500 });
+    }
+  };
 
   return (
     <div className="Header-Main-Mobile">
       <div className="Header-Main-Left-Mobile">
-        <img src={logo13th} alt="logo13th" />
+        <img src={logo13th} alt="logo13th" onClick={handleMain} />
       </div>
       <div className="Header-Main-Right-Mobile">
-        <Link to="RecruitAboutMobile" smooth={true} duration={500} className="Header-Main-Right-ABOUT-Mobile">
+        <div
+          className="Header-Main-Right-ABOUT-Mobile"
+          onClick={() => handleScrollTo('RecruitAboutMobile')}
+        >
           ABOUT
-        </Link>
-        <Link to="FAQ" smooth={true} duration={1800} className="Header-Main-Right-FAQ-Mobile">
+        </div>
+        <div
+          className="Header-Main-Right-FAQ-Mobile"
+          onClick={() => handleScrollTo('FAQ')}
+        >
           FAQ
-        </Link>
-        <div className="Header-Main-Right-APPLY-Mobile" onClick={handleJoin}>13기 지원하기</div>
+        </div>
+        <div className="Header-Main-Right-APPLY-Mobile" onClick={handleJoin}>
+          13기 지원하기
+        </div>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@
 .RecuritMain-Main-Mobile {
     position: relative;
     width: 100%;
-    height: 689px;
+    height: 100vh;
     margin-top: 17px;
     display: flex;
     flex-direction: column;

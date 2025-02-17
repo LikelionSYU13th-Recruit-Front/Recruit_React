@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Slider-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.slick-slider {
+    width: 300px;
+    height: 477px;
+    margin: 0;
+}
+
+.slick-track {
+    width: auto !important;
+    display: flex !important;
+}
+
+.slick-list {
+    overflow: visible !important;
+}
+
+.slick-slide>div {
+    height: 477px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 0 6px;
+}
+
+.TrackSlider {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 288px !important;
+    height: 477px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.Slider-BE,
+.Slider-DE,
+.Slider-FE {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 요소들을 맨 위로 정렬 */
+    gap: 11px;
+    color: #000000;
+    font-family: 'Pretendard-Bold';
+    font-size: 18px;
+
+}
+
+
+
+.Slider-DE-Body-2,
+.Slider-DE-Body,
+.Slider-BE-Body-2,
+.Slider-BE-Body,
+.Slider-FE-Body-2,
+.Slider-FE-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 260px;
+}
+
+
+
+.Slider-BE-Body-Title,
+.Slider-DE-Body-Title,
+.Slider-FE-Body-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 39px;
+    font-family: 'Pretendard-SemiBold';
+
+}
+
+.Slider-DE-Body-Title-Content-1 {
+    color: #FF469F;
+    font-size: 16px;
+}
+
+.Slider-BE-Body-Title-Name,
+.Slider-FE-Body-Title-Name,
+.Slider-DE-Body-Title-Name {
+    color: #939393;
+    font-size: 10px;
+}
+
+.Slider-DE-Body-Description,
+.Slider-BE-Body-Description,
+.Slider-FE-Body-Description {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.lion-logo {
+    width: 24px;
+    height: 25px;
+    padding-top: 33px;
+}
+
+.Slider-DE-Body-Title-Content-2 {
+    color: #1B9CFF;
+}
+
+.Slider-BE-Body-Title-Content-3 {
+    color: #FFBE63;
+}
+
+
+/* 왼쪽 오른쪽 방향표 삭제 */
+.slick-arrow,
+.slick-prev {
+    display: none !important;
+}
+
+.slick-arrow,
+.slick-next {
+    display: none !important;
+}

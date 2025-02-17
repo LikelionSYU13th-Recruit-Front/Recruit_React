@@ -49,6 +49,7 @@
 }
 
 .RecruitTrackIntro-Container-Body-Mobile  {
+    width: 335px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -58,10 +59,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
 .RecruitTrackIntro-Container-Body-Design-Top-Mobile , .RecruitTrackIntro-Container-Body-FE-Top-Mobile , .RecruitTrackIntro-Container-Body-BE-Top-Mobile  {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

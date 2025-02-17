@@ -27,7 +27,15 @@ import HeaderMobile from './ComponentsMobile/Header-Mobile.jsx';
 import RecruitMainMobile from './ComponentsMobile/RecruitMain-Mobile.jsx';
 import RecruitAboutMobile from './ComponentsMobile/RecruitAbout-Mobile.jsx';
 import RecruitTrackIntroMobile from './ComponentsMobile/RecruitTrackIntro-Mobile.jsx';
-
+import ActivityMobile from './ComponentsMobile/Activity-Mobile.jsx';
+import BabyLionMobile from './ComponentsMobile/BabyLion-Mobile.jsx';
+import ReviewMobile from './ComponentsMobile/Review-Mobile.jsx';
+import ScheduleMobile from './ComponentsMobile/Schedule-Mobile.jsx'
+import QNAMobile from "./ComponentsMobile/QNAMobile.jsx"
+import AskLinkPage from "./ComponentsMobile/AskLink.jsx"
+import FooterMobile from "./ComponentsMobile/Footer-Mobile.jsx"
+import PostExampleMobile from './ComponentsMobile/postExample-Mobile.jsx';
+import CompleteMobile from './ComponentsMobile/Complete-Mobile.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -45,8 +53,9 @@ ReactDOM.createRoot(document.getElementById('root-mobile')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /></div>} />
-        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExample /></div>} />
+        <Route path="/" element={<div id='subroot-mobile'><HeaderMobile /><RecruitMainMobile /><RecruitAboutMobile /><RecruitTrackIntroMobile /><ActivityMobile/><BabyLionMobile/><ReviewMobile/><ScheduleMobile/><QNAMobile/><AskLinkPage/><FooterMobile/></div>} />
+        <Route path="/Join" element={<div id='subroot-mobile'><HeaderMobile /><PostExampleMobile /></div>} />
+        <Route path="/Complete" element={<div id='subroot-mobile'><HeaderMobile /><CompleteMobile /></div>} />
       </Routes>
     </Router>
   </React.StrictMode>
