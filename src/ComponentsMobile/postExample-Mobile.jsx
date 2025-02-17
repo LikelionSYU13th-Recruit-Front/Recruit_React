@@ -290,7 +290,7 @@ function postExampleMobile() {
                                     </label>
                                 </div>
                                 <textarea className={`PostMobContainer-TrackQ-answer ${errors[`q${index + 1}`] ? 'error-input' : ''}`}
-                                    placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} maxLength={index % 2 == 0 ? 500 : 300} onChange={handleChange} />
+                                    placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} onChange={handleChange} />
                                 {errors[`q${index + 1}`] && <span className="mobile-error-text">*필수 입력 항목입니다.</span>}
                             </div>
                         ))}
