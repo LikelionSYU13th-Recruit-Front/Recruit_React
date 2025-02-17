@@ -38,6 +38,13 @@ function postExampleMobile() {
         q5: false,
     });
 
+    const [charCounts, setCharCounts] = useState({
+        q1: 0,
+        q2: 0,
+        q3: 0,
+        q4: 0
+    });
+
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData({
@@ -45,6 +52,13 @@ function postExampleMobile() {
             [name]: type === "checkbox" ? checked : value,
         });
         setErrors((prev) => ({ ...prev, [name]: false }));
+
+        if (name.startsWith("q")) {
+            setCharCounts((prev) => ({
+                ...prev,
+                [name]: value.length
+            }));
+        }
     };
 
     const handleTrackSelect = (track) => {
@@ -96,22 +110,22 @@ function postExampleMobile() {
 
     const questions = {
         PRODUCT_DESIGN: [
-            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요? (0/500)",
-            "본인의 협업 경험에 대해 소개해 주세요! 코딩 또는 디자인 경험이 아니어도 무방합니다. (0/300)",
-            "삼육멋사와 함께 진행하고 싶은 프로젝트에 대해 설명해주세요. (0/500)",
-            "평소 사용하던 어플 중 UX/UI가 좋다고 느낀 어플은 무엇인가요? 그 이유를 설명해주세요. (0/500)",
+            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요?",
+            "본인의 협업 경험에 대해 소개해 주세요! 코딩 또는 디자인 경험이 아니어도 무방합니다.",
+            "삼육멋사와 함께 진행하고 싶은 프로젝트에 대해 설명해주세요.",
+            "평소 사용하던 어플 중 UX/UI가 좋다고 느낀 어플은 무엇인가요? 그 이유를 설명해주세요.",
         ],
         FRONTEND: [
-            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요? (0/500)",
-            "본인의 개발 경험에 대해 소개해 주세요!  (사용 가능한 언어 / 관심있는 기술스택 / 프로젝트 경험 등) (0/500)",
-            "삼육멋사와 함께 진행하고 싶은 프로젝트에 대해 설명해주세요. (0/500)",
-            "본인이 정의 해보는 프론트엔드 특징은 무엇인가요? (0/300)",
+            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요?",
+            "본인의 개발 경험에 대해 소개해 주세요!  (사용 가능한 언어 / 관심있는 기술스택 / 프로젝트 경험 등)",
+            "삼육멋사와 함께 진행하고 싶은 프로젝트에 대해 설명해주세요.",
+            "본인이 정의 해보는 프론트엔드 특징은 무엇인가요?",
         ],
         BACKEND: [
-            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요? (0/500)",
-            "본인의 개발 경험을 알려주세요! (기술스택 / 프로젝트 경험 등) (0/300)",
-            "백엔드'의 개념이나 특징 등을 본인만의 방식으로 정의해 주세요! (0/500)",
-            "프로그래밍을 처음 배웠을 때와 비교했을 때, 지금 가장 크게 성장했다고 느끼는 부분은 무엇인가요? (0/300)",
+            "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요?",
+            "본인의 개발 경험을 알려주세요! (기술스택 / 프로젝트 경험 등)",
+            "백엔드'의 개념이나 특징 등을 본인만의 방식으로 정의해 주세요!",
+            "프로그래밍을 처음 배웠을 때와 비교했을 때, 지금 가장 크게 성장했다고 느끼는 부분은 무엇인가요?",
         ],
     };
 
@@ -270,10 +284,13 @@ function postExampleMobile() {
                         {questions[selectedTrack].map((question, index) => (
                             <div className="PostMobContainer-TrackQ-Box" key={index}>
                                 <div className="PostMobContainer-TrackQ-Box-Top">
-                                    <label className="PostMobContainer-TrackQ-question"><span>{index + 1}.</span><span>{question}</span></label>
+                                    <label className="PostMobContainer-TrackQ-question">
+                                        <span>{index + 1}.</span>
+                                        <span>{question} ({charCounts[`q${index + 1}`]}/{index % 2 == 0 ? 500 : 300})</span>
+                                    </label>
                                 </div>
                                 <textarea className={`PostMobContainer-TrackQ-answer ${errors[`q${index + 1}`] ? 'error-input' : ''}`}
-                                    placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} onChange={handleChange} />
+                                    placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} maxLength={index % 2 == 0 ? 500 : 300} onChange={handleChange} />
                                 {errors[`q${index + 1}`] && <span className="mobile-error-text">*필수 입력 항목입니다.</span>}
                             </div>
                         ))}
