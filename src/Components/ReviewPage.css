@@ -125,32 +125,33 @@
 .review-box-2,
 .review-box-1 {
     position: relative;
-    width: 550px;
-    height: 290px;
+    width: 450px;
+    height: 242px;
+    padding-top: 48px;
+    padding-left: 50px;
+    padding-right: 50px;
     border: none;
     border-radius: 24px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    /* 세로 정렬로 변경 */
     justify-content: flex-start;
     align-items: flex-start;
-
 }
 
 .review-box-header {
+    width: 100%;
     position: relative;
-    width: calc(100% - 109px);
-    /*좌우 패딩값을 빼줘야함*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.review-box-header-left {
+    position: relative;
     display: flex;
     align-items: center;
-    /* 헤더 내부 정렬 */
-    padding-top: 51px;
-    padding-left: 49px;
-    padding-right: 60px;
-    /* position: absolute;
-    top: 0; */
-
+    gap: 12px;
 }
 
 
@@ -189,7 +190,6 @@
 .lion-logo {
     width: 28px;
     height: 28px;
-    padding-right: 12px;
 }
 
 
@@ -212,18 +212,17 @@
 .header-name-5,
 .header-name-6 {
     position: relative;
-    margin-left: auto;
-    padding-top: 14px;
     color: #939393;
     font-family: 'Pretendard-SemiBold';
     font-size: 12px;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 .header-title-design,
 .header-title-frontend,
 .header-title-backend {
     position: relative;
-    padding-top: 1px;
     font-family: 'Pretendard-SemiBold';
     font-size: 24px;
 }
@@ -246,7 +245,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     margin-top: 34px
 }
@@ -258,5 +257,4 @@
     font-family: 'Pretendard-Medium';
     font-size: 18px;
     color: #323232;
-
 }

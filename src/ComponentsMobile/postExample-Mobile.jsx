@@ -109,9 +109,9 @@ function postExampleMobile() {
         ],
         BACKEND: [
             "멋쟁이사자처럼 삼육대학교에 지원하게 된 동기와 해당 트랙을 선택하신 이유가 무엇인가요? (0/500)",
-            "본인의 협업 경험에 대해 소개해 주세요! 코딩 또는 디자인 경험이 아니어도 무방합니다. (0/300)",
-            "삼육멋사와 함께 진행하고 싶은 프로젝트에 대해 설명해주세요. (0/500)",
-            "'백엔드'의 개념이나 특징 등을 본인만의 방식으로 정의해 주세요. (0/300)",
+            "본인의 개발 경험을 알려주세요! (기술스택 / 프로젝트 경험 등) (0/300)",
+            "백엔드'의 개념이나 특징 등을 본인만의 방식으로 정의해 주세요! (0/500)",
+            "프로그래밍을 처음 배웠을 때와 비교했을 때, 지금 가장 크게 성장했다고 느끼는 부분은 무엇인가요? (0/300)",
         ],
     };
 
@@ -144,27 +144,27 @@ function postExampleMobile() {
             <form className="PostMobContainer-Contents" onSubmit={handleSubmit}>
                 <div className="PostMobContainer-InfoBox">
                     <div className="PostMobContainer-Contents-Name">
-                    <div className="PostMobContainer-Contents-Name-top">
+                        <div className="PostMobContainer-Contents-Name-top">
                             <div className="PostMobContainer-Contents-Name-label">이름</div>
                             <input className={`PostMobContainer-Contents-Name-Inputbox ${errors.name ? 'error-input' : ''}`} type="text" name="name" placeholder="이름을 입력해주세요" value={formData.name} onChange={handleChange} />
-                        </div>                
+                        </div>
                         <div className="PostMobContainer-Contents-Name-Inputbox-mobile-error-text">
                             {errors.name && <span className="mobile-error-text">*필수 입력 항목입니다.</span>}
                         </div>
                     </div>
                     <div className="PostMobContainer-Contents-studentNum">
-                    <div className="PostMobContainer-Contents-studentNum-top">
-                        <div className="PostMobContainer-Contents-studentNum-label">학번</div>
-                        <input className={`PostMobContainer-Contents-studentNum-Inputbox ${errors.studentNum ? 'error-input' : ''}`} type="text" name="studentNum" placeholder="2025123456" value={formData.studentNum} onChange={handleChange} />
+                        <div className="PostMobContainer-Contents-studentNum-top">
+                            <div className="PostMobContainer-Contents-studentNum-label">학번</div>
+                            <input className={`PostMobContainer-Contents-studentNum-Inputbox ${errors.studentNum ? 'error-input' : ''}`} type="text" name="studentNum" placeholder="2025123456" value={formData.studentNum} onChange={handleChange} />
                         </div>
                         <div className="PostMobContainer-Contents-studentNum-Inputbox-mobile-error-text">
                             {errors.name && <span className="mobile-error-text">*필수 입력 항목입니다.</span>}
                         </div>
                     </div>
                     <div className="PostMobContainer-Contents-phoneNum">
-                    <div className="PostMobContainer-Contents-phoneNum-top">
-                        <div className="PostMobContainer-Contents-phoneNum-label">전화번호</div>
-                        <input className={`PostMobContainer-Contents-phoneNum-Inputbox ${errors.studentNum ? 'error-input' : ''}`} type="text" name="phoneNum" placeholder="010-XXXX-XXXX" value={formData.phoneNum} onChange={handleChange} />
+                        <div className="PostMobContainer-Contents-phoneNum-top">
+                            <div className="PostMobContainer-Contents-phoneNum-label">전화번호</div>
+                            <input className={`PostMobContainer-Contents-phoneNum-Inputbox ${errors.studentNum ? 'error-input' : ''}`} type="text" name="phoneNum" placeholder="010-XXXX-XXXX" value={formData.phoneNum} onChange={handleChange} />
                         </div>
                         <div className="PostMobContainer-Contents-phoneNum-Inputbox-mobile-error-text">
                             {errors.studentNum && <span className="mobile-error-text">*필수 입력 항목입니다.</span>}
@@ -270,7 +270,7 @@ function postExampleMobile() {
                         {questions[selectedTrack].map((question, index) => (
                             <div className="PostMobContainer-TrackQ-Box" key={index}>
                                 <div className="PostMobContainer-TrackQ-Box-Top">
-                                    <label className="PostMobContainer-TrackQ-question"><span>{index+1}.</span><span>{question}</span></label>
+                                    <label className="PostMobContainer-TrackQ-question"><span>{index + 1}.</span><span>{question}</span></label>
                                 </div>
                                 <textarea className={`PostMobContainer-TrackQ-answer ${errors[`q${index + 1}`] ? 'error-input' : ''}`}
                                     placeholder={placeholders[index]} type="text" name={`q${index + 1}`} value={formData[`q${index + 1}`]} onChange={handleChange} />

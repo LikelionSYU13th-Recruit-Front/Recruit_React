@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import './RecruitMain-Mobile.css';
 
 import PenAnimationMobile from './PenAnimationMobile';
@@ -43,6 +44,12 @@ function RecruitMainMobile() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const navigate = useNavigate();
+  const handleJoin = () => {
+    navigate('/Join');
+  }
+
   return (
     <div className="RecuritMain-Main-Mobile">
       <PenAnimationMobile />
@@ -60,7 +67,7 @@ function RecruitMainMobile() {
       </div>
       <div className="RecuritMain-Main-SubTitle-Mobile">
         <div className="RecuritMain-Main-SubTitle-RecruitIntro-Mobile">함께 성장할<br /> 삼육멋사 13기 아기사자를 모집합니다</div>
-        <div className="RecuritMain-Main-SubTitle-ApplyBtn-Mobile">13기 지원하기</div>
+        <div className="RecuritMain-Main-SubTitle-ApplyBtn-Mobile" onClick={handleJoin}>13기 지원하기</div>
       </div>
     </div>
   );

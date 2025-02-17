@@ -22,7 +22,7 @@ function ReviewSlide() {
             <Slider {...settings}>
                 <div className="TrackSlider">
                     <div className="Slider-DE">
-                        <img src={PinkLion} className="lion-logo" />
+                        <img src={PinkLion} className="lion-logo2" />
                         기획 & UI/UX 디자인
                     </div>
                     <div className="Slider-DE-Body">
@@ -56,7 +56,7 @@ function ReviewSlide() {
 
                 <div className="TrackSlider">
                     <div className="Slider-FE">
-                        <img src={BlueLion} className="lion-logo" />
+                        <img src={BlueLion} className="lion-logo2" />
                         프론트엔드
                     </div>
 
@@ -79,11 +79,11 @@ function ReviewSlide() {
                             <div className="Slider-FE-Body-Title-Name">장O익</div>
                         </div>
                         <div className="Slider-FE-Body-Description">
-                            언어만 조금 다룰 줄 아는 상태로 들어가서<br />
-                            걱정했지만 열심히 했더니 13기 모집 페이지까지<br />
-                            만들 수 있는 실력을 갖추게 되었습니다.<br />
-                            또한 멋사를 통해 여러 대회에 참여할 기회가 있었고<br />
-                            열심히 참여했더니 많은 것을 얻어갈 수 있었습니다!
+                        학교에서 배우지 않은 것들을 배울 수 있어 좋았고, <br />
+여러 대회를 경험하며 많은 것을 얻어갈 수 있었습니다. <br />
+멋쟁이사자처럼에서 얻은 경험과 지식들이 무수히 많았기 때문에 프론트엔드에 관심이 있거나, 동아리 지원을 <br />
+고민하고 있는 학우분들에게 꼭 멋쟁이사자처럼을 <br />
+추천드리고 싶습니다.
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@ function ReviewSlide() {
 
                 <div className="TrackSlider">
                     <div className="Slider-BE" >
-                        <img src={YellowLion} className="lion-logo" />
+                        <img src={YellowLion} className="lion-logo2" />
                         백엔드
                     </div>
                     <div className="Slider-BE-Body">
