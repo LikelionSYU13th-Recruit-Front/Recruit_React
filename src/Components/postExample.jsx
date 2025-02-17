@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import './postExample.css';
-
 import arrowRight from '../images/arrowRight.png';
 
 function postExample() {

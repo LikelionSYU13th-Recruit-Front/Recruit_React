@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import './postExample-Mobile.css';
 
-import arrowRight2 from '../images/arrowRight.png';
-
-
-
 function postExampleMobile() {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
@@ -302,7 +298,6 @@ function postExampleMobile() {
                         <div className="PostMobContainer-Submit">
                             <button type="submit" disabled={isLoading}>
                                 {isLoading ? "제출 중" : "지원서 제출하기"}
-                                {/* <img src={arrowRight2} /> */}
                             </button>
                         </div>
                     </div>
