@@ -94,7 +94,6 @@ function postExampleMobile() {
         }
         setIsLoading(true);
         try {
-            console.log(formData);
             await axios.post("https://syu-likelion.org/applications", formData);
 
             navigate('/Complete');
