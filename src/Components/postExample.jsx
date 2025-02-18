@@ -204,7 +204,7 @@ function postExample() {
             </div>
           </div>
           <div className="PostContainer-ContentsSelect-session">
-            <div className="PostContainer-ContentsSelect-session-label">2. 멋쟁이사자처럼 삼육대학교의 정기세션은 매주 화요일 n시입니다. 참여 가능하신가요?</div>
+            <div className="PostContainer-ContentsSelect-session-label">2. 멋쟁이사자처럼 삼육대학교의 정기세션은 매주 화요일 17시입니다. 참여 가능하신가요?</div>
             <div className="PostContainer-ContentsSelect-session-radio">
               <label className="custom-radio">
                 <input

@@ -24,7 +24,7 @@ function RecruitAbout() {
                 <div className="RecruitAbout-Intro-Description">
                     테크 기반의 아이디어 실현을 위한 전국 최대 규모의 대학 연합 IT 동아리로<br />
                     전공 상관없이 다양한 전공자들이 모여 아이디어를 실현하는<br />
-                    삼육대학교 중앙동아리,SW 동아리이자 전국 NN개의 대학과 함께하는 연합 동아리입니다.
+                    삼육대학교 중앙동아리,SW 동아리이자 전국 121개의 대학과 함께하는 연합 동아리입니다.
                 </div>
             </div>
         </Element>
