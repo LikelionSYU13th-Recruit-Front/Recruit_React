@@ -266,11 +266,11 @@ function postExampleMobile() {
                         </div>
                         <div className="PostMobContainer-ContentsSelect-Tracks-Buttons">
                             <button type="button" onClick={() => handleTrackSelect("PRODUCT_DESIGN")} className={selectedTrack === "PRODUCT_DESIGN" ?
-                                "PostMobContainer-ContentsSelect-TracksD-selected" : "PostMobContainer-ContentsSelect-TracksD"}>기획・디자인 트랙</button>
+                                "PostMobContainer-ContentsSelect-TracksD-selected" : "PostMobContainer-ContentsSelect-TracksD"}>기획・디자인</button>
                             <button type="button" onClick={() => handleTrackSelect("FRONTEND")} className={selectedTrack === "FRONTEND" ?
-                                "PostMobContainer-ContentsSelect-TracksF-selected" : "PostMobContainer-ContentsSelect-TracksF"}>프론트엔드 트랙</button>
+                                "PostMobContainer-ContentsSelect-TracksF-selected" : "PostMobContainer-ContentsSelect-TracksF"}>프론트엔드</button>
                             <button type="button" onClick={() => handleTrackSelect("BACKEND")} className={selectedTrack === "BACKEND" ?
-                                "PostMobContainer-ContentsSelect-TracksB-selected" : "PostMobContainer-ContentsSelect-TracksB"}>백엔드 트랙</button>
+                                "PostMobContainer-ContentsSelect-TracksB-selected" : "PostMobContainer-ContentsSelect-TracksB"}>백엔드</button>
                         </div>
                     </div>
                 </div>

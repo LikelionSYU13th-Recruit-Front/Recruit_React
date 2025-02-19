@@ -235,11 +235,11 @@ function postExample() {
             <div className="PostContainer-ContentsSelect-Tracks-Buttons">
 
               <button type="button" onClick={() => handleTrackSelect("PRODUCT_DESIGN")} className={selectedTrack === "PRODUCT_DESIGN" ?
-                "PostContainer-ContentsSelect-TracksD-selected" : "PostContainer-ContentsSelect-TracksD"}>기획・디자인 트랙</button>
+                "PostContainer-ContentsSelect-TracksD-selected" : "PostContainer-ContentsSelect-TracksD"}>기획・디자인</button>
               <button type="button" onClick={() => handleTrackSelect("FRONTEND")} className={selectedTrack === "FRONTEND" ?
-                "PostContainer-ContentsSelect-TracksF-selected" : "PostContainer-ContentsSelect-TracksF"}>프론트엔드 트랙</button>
+                "PostContainer-ContentsSelect-TracksF-selected" : "PostContainer-ContentsSelect-TracksF"}>프론트엔드</button>
               <button type="button" onClick={() => handleTrackSelect("BACKEND")} className={selectedTrack === "BACKEND" ?
-                "PostContainer-ContentsSelect-TracksB-selected" : "PostContainer-ContentsSelect-TracksB"}>백엔드 트랙</button>
+                "PostContainer-ContentsSelect-TracksB-selected" : "PostContainer-ContentsSelect-TracksB"}>백엔드</button>
             </div>
           </div>
         </div>
