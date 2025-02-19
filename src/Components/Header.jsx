@@ -21,7 +21,7 @@ function Header() {
 
   useEffect(() => {
     const now = new Date();
-    const startDate = new Date('2025-02-19T14:10:00');
+    const startDate = new Date('2025-02-27T00:00:00');
     const endDate = new Date('2025-03-12T18:00:00');
 
     setIsRecruiting(now >= startDate && now <= endDate);
