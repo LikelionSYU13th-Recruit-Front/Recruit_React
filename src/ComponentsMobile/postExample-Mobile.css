@@ -183,10 +183,10 @@
     color: #323232;
 }
 
-.PostMobContainer-Contents-phoneNum-InputBox,
-.PostMobContainer-Contents-email-Inputbox,
-.PostMobContainer-Contents-studentNum-InputBox,
-.PostMobContainer-Contents-Name-InputBox {
+.PostMobContainer-Contents-phoneNum-Inputbox::placeholder,
+.PostMobContainer-Contents-email-Inputbox::placeholder,
+.PostMobContainer-Contents-studentNum-Inputbox::placeholder,
+.PostMobContainer-Contents-Name-Inputbox::placeholder {
     color: #D6D6D6;
 }
 
@@ -293,7 +293,7 @@
   }
 
 .PostMobContainer-ContentsSelect-Tracks-Buttons {
-    width: 100%;
+    width: 342px;
     display: flex;
     justify-content: center;
     gap: 10px;

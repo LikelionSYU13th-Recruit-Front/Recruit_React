@@ -32,7 +32,6 @@ function postExample() {
     q2: false,
     q3: false,
     q4: false,
-    q5: false,
   });
 
   const [charCounts, setCharCounts] = useState({
