@@ -37,6 +37,13 @@ function RecruitMain() {
     navigate('/Join');
   }
 
+  const handleCantJoin = () => {
+    alert("모집기한이 아닙니다.")
+  }
+
+  const [isRecruiting, setIsRecruiting] = useState(false);
+  const [isBeforeRecruit, setIsBeforeRecruit] = useState(false);
+
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
@@ -50,6 +57,16 @@ function RecruitMain() {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const now = new Date();
+    const startDate = new Date('2025-02-27T00:00:00');
+    const endDate = new Date('2025-03-12T18:00:00');
+
+    setIsRecruiting(now >= startDate && now <= endDate);
+    setIsBeforeRecruit(now < startDate);
+  }, []);
+
   return (
     <div className="RecuritMain-Main">
       <div className="RecuritMain-Main-Title">
@@ -66,7 +83,9 @@ function RecruitMain() {
       </div>
       <div className="RecuritMain-Main-SubTitle">
         <div className="RecuritMain-Main-SubTitle-RecruitIntro">함께 성장할 삼육멋사 13기 아기사자를 모집합니다</div>
-        <div className="RecuritMain-Main-SubTitle-ApplyBtn" onClick={handleJoin}>13기 지원하기</div>
+        <div className="RecuritMain-Main-SubTitle-ApplyBtn" onClick={isRecruiting ? handleJoin : handleCantJoin}>
+          {isBeforeRecruit ? '곧 지원 시작' : isRecruiting ? '13기 지원하기' : '13기 모집 마감'}
+        </div>
       </div>
     </div>
   );
