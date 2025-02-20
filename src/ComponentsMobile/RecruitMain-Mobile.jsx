@@ -64,7 +64,7 @@ function RecruitMainMobile() {
   }
 
   const handleCantJoin = () => {
-    alert("모집기한이 아닙니다.")
+    alert("모집 기간이 아닙니다.")
   }
 
   return (
@@ -85,7 +85,7 @@ function RecruitMainMobile() {
       <div className="RecuritMain-Main-SubTitle-Mobile">
         <div className="RecuritMain-Main-SubTitle-RecruitIntro-Mobile">함께 성장할<br /> 삼육멋사 13기 아기사자를 모집합니다</div>
         <div className="RecuritMain-Main-SubTitle-ApplyBtn-Mobile" onClick={isRecruiting ? handleJoin : handleCantJoin}>
-        {isBeforeRecruit ? '곧 지원 시작' : isRecruiting ? '13기 지원하기' : '13기 모집 마감'}
+        {isBeforeRecruit ? '02.27 모집 시작' : isRecruiting ? '13기 지원하기' : '13기 모집 마감'}
         </div>
       </div>
     </div>
