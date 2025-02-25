@@ -162,6 +162,12 @@
   gap: 12px;
 }
 
+.PostContainer-Contents-email-miniBox {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
 .PostContainer-Contents-email-Notice {
   color: #939393;
   font-family: 'Pretendard-Medium';
