@@ -62,7 +62,7 @@ function HeaderMobile() {
         </div>
         <div
           className="Header-Main-Right-FAQ-Mobile"
-          onClick={() => handleScrollTo('FAQ')}
+          onClick={() => handleScrollTo('FAQMOBILE')}
         >
           FAQ
         </div>

@@ -42,7 +42,7 @@ function QNAMobile() {
     ]
 
     return (
-        <Element name="FAQ" className="QNAMobile-container">
+        <Element name="FAQMOBILE" className="QNAMobile-container">
             <div className="QNAMobile-header-container">
                 <div className="QNAMobile-header-text">
                     <div className="QNAMobile-header-mainText">FAQ<br />자주 묻는 질문</div>
