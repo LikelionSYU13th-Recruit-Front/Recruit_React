@@ -87,6 +87,13 @@ function postExample() {
       isValid = false;
     }
 
+    for (let key of Object.keys(formData)) {
+      if (containsEmoji(formData[key])) {
+        alert("지원서 입력란에는 이모티콘을 사용할 수 없습니다.");
+        return;
+      }
+    }
+
     setErrors(validationErrors);
     if (!isValid) {
       alert("양식을 모두 입력해주세요.");
