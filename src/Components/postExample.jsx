@@ -41,6 +41,16 @@ function postExample() {
     q4: 0
   });
 
+  const containsEmoji = (text) => {
+    for (let i = 0; i < text.length; i++) {
+      const charCode = text.codePointAt(i);
+      if (charCode > 0xffff) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
