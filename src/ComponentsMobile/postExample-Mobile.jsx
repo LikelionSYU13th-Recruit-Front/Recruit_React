@@ -41,15 +41,15 @@ function postExampleMobile() {
         q4: 0
     });
 
-    const containsEmoji = (text) => {
-        for (let i = 0; i < text.length; i++) {
-          const charCode = text.codePointAt(i);
-          if (charCode > 0xffff) {
-            return true;
-          }
-        }
-        return false;
-      };
+    // const containsEmoji = (text) => {
+    //     for (let i = 0; i < text.length; i++) {
+    //       const charCode = text.codePointAt(i);
+    //       if (charCode > 0xffff) {
+    //         return true;
+    //       }
+    //     }
+    //     return false;
+    //   };
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -97,12 +97,12 @@ function postExampleMobile() {
             isValid = false;
         }
 
-        for (let key of Object.keys(formData)) {
-            if (containsEmoji(formData[key])) {
-                alert("지원서 입력란에는 이모티콘을 사용할 수 없습니다.");
-                return;
-            }
-        }
+        // for (let key of Object.keys(formData)) {
+        //     if (containsEmoji(formData[key])) {
+        //         alert("지원서 입력란에는 이모티콘을 사용할 수 없습니다.");
+        //         return;
+        //     }
+        // }
 
         setErrors(validationErrors);
         if (!isValid) {
