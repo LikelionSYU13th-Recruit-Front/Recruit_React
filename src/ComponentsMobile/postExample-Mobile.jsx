@@ -246,7 +246,7 @@ function postExampleMobile() {
                     </div>
                     <div className="PostMobContainer-ContentsSelect-session">
                         <div className="PostMobContainer-ContentsSelect-session-label">
-                            2. 멋쟁이사자처럼 삼육대학교의 정기세션은 <br />&nbsp;&nbsp;&nbsp;&nbsp;매주 화요일 17시입니다. 참여 가능하신가요?
+                            2. 멋쟁이사자처럼 삼육대학교의 정기세션은 <br />&nbsp;&nbsp;&nbsp;&nbsp;매주 화요일 18시입니다. 참여 가능하신가요?
                         </div>
                         <div className="PostMobContainer-ContentsSelect-session-radio">
                             <label className="mobile-custom-radio">

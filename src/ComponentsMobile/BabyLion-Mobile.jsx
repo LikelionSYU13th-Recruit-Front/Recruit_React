@@ -13,7 +13,7 @@ function BabyLionMobile() {
                     <div className='baby-mobile-box-1'>
                         <p className='babylion-mobile-num'>01</p>
                         <p className='babylion-mobile-content'>
-                            매주 화요일 5시에 진행되는 <br />
+                            매주 화요일 18시에 진행되는 <br />
                             정규 세션에 참여할 수 있는 사람<br />
                             <span className='mobile-except'>(시험기간 제외)</span>
                         </p>
