@@ -1,8 +1,18 @@
-# React + Vite
+### **멋쟁이사자처럼 13기 모집 페이지** 🎉  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **개요**: 2025-1 학기 동아리 멋쟁이사자처럼 13기 아기사자 모집을 위해 제작한 웹 서비스입니다.  
+  다양한 기기 환경에서도 원활하게 이용할 수 있도록 **모바일, 태블릿, 데스크톱에 대응하는 반응형 디자인**을 적용했습니다.
 
-Currently, two official plugins are available:
+- **주요 기능**:  
+  - 모집 공고 확인 및 지원 안내 제공
+  - FAQ 및 문의 기능 제공 
+  - 화면 크기에 따라 자동으로 레이아웃이 최적화되는 **반응형 페이지 구현**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **역할**: 프론트엔드
+  - React와 JavaScript를 활용하여 컴포넌트 기반 구조 설계  
+  - 반응형 레이아웃을 통해 다양한 화면 크기에서 최적화  
+
+- **사용 기술**:  
+  - **Frontend**: React, JavaScript
+
+- **링크**: [멋사13기 모집 페이지](https://syu-likelion.org/)
